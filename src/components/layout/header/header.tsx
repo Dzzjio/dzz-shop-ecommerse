@@ -9,12 +9,12 @@ const Header = () => {
     <HeaderContainer>
       <div>
         <img src={logo} alt="logo" />
-        <ul>
-          <li>Home <Star></Star></li>
-          <li>Shop <Star></Star></li>
-          <li>Blog <Star></Star></li>
-          <li>Portfolio <Star></Star></li>
-          <li>Pages <Star></Star></li>
+         <ul> {/*routers ro davamateb mere gavaketeb active links shavi varskvlav */}
+          <li><span>Home</span> <Star></Star></li>
+          <li><span>Shop</span> <Star></Star></li>
+          <li><span>Blog</span> <Star></Star></li>
+          <li><span>Portfolio</span> <Star></Star></li>
+          <li><span>Pages</span> <Star></Star></li>
         </ul>
       </div>
       <HeaderRightSide>

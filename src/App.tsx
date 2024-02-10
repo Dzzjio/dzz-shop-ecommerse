@@ -7,6 +7,7 @@ function App() {
   return (
     <div>
       <Header />
+      {/* eseni satestod aris chasmuli */}
       <div style={{display: "flex", justifyContent:"space-between", gap:"20px", margin:"30px"}}>
         <PopularProductBox productName="Bluebell Hand Block Tiered Dress" price="80$" sale={true} newItem={false} />
         <PopularProductBox productName="Another one" price="9.99$" sale={false} newItem={true} />
