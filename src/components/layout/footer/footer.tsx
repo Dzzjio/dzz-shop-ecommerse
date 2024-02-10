@@ -41,7 +41,7 @@ const Footer = () => {
     const FooterMenuArr = ['Instagram Profile', 'New Collection', 'Woman Dress', 'Contact Us', 'Latest News'];
 
     return (
-        <footer style={{ position: 'fixed', bottom: 0, width: '100%', borderTop: '2px solid #000' }}>
+        <footer style={{ bottom: 0, width: '100%', borderTop: '2px solid #000' }}>
             <FooterConteiner>
                 <FooterTop>
                     <div>
