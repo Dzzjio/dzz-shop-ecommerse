@@ -23,12 +23,21 @@ export const InputContainer = styled.div`
     padding: 15px 10px;
     border: none;
     border-radius: 10px;
+
+    &:last-child {
+        cursor: pointer;
+    }
 `
 
 export const FooterInput = styled.input`
     background-color: #FEEB9D;
     width: 100%;
     border: none;
+
+    &:focus {
+        border-color: transparent;
+        outline: none;
+    }
 
     &::placeholder {
         color: black;

@@ -36,10 +36,7 @@ export const HeaderContainer = styled.header`
         & > img {
             height: 30px;
             margin: 10px 50px;
-        }
-
-        & >  {
-
+            cursor: pointer;
         }
     }
 
@@ -49,6 +46,7 @@ export const HeaderContainer = styled.header`
         margin: 0;
         
         & > li {
+            cursor: pointer;
             list-style: none;
             margin-right: 15px;
             display: flex;
@@ -76,6 +74,10 @@ export const HeaderRightSide = styled.div`
     display: flex;
     margin: 10px 50px;
     gap: 30px;
+
+    & > * {
+        cursor: pointer;
+    }
 
     & > div {
         display: flex;
