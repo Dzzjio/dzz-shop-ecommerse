@@ -19,7 +19,7 @@ export const StyledPopularSectionTop = styled.section`
     & > div {
         border: 1px solid #000;
         border-radius: 100px;
-        padding: 0 10px;
+        padding: 0 5px;
     }
 
     & > div > ul {
