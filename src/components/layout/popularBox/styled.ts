@@ -1,8 +1,28 @@
 import styled from "styled-components";
 
+export const StyledPopularProductBoxBtn = styled.button`
+    opacity: 0;
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 170px;
+    padding: 10px;
+    top: 365px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    transition: opacity 0.3s ease;
+`
+
 export const StyledPopularProductBox = styled.div`
     position: relative;
     width: 300px;
+
+    &:hover ${StyledPopularProductBoxBtn} {
+        opacity: 1;
+    }
 `
 
 export const StyledPopularProductBoxInfo = styled.div`
@@ -62,22 +82,3 @@ export const New = styled.div`
     border-radius: 15px
 `
 
-export const StyledPopularProductBoxBtn = styled.button`
-    // display: none;
-    position: absolute;
-    background-color: black;
-    color: white;
-    width: 170px;
-    padding: 10px;
-    top: 365px;
-    left: 50%;
-    transform: translate(-50%);
-    margin: 0 auto;
-    border: 3px solid #fff;
-    border-radius: 100px;
-    transition: opacity 0.3s ease;
-
-    &::hover {
-        display: block;
-    }
-`
