@@ -14,6 +14,13 @@ export const StyledPopularProductBoxBtn = styled.button`
     border: 3px solid #fff;
     border-radius: 100px;
     transition: opacity 0.3s ease;
+    cursor: pointer;
+
+    &:active {
+        color: #000;
+        background-color: #fff;
+        border-bottom: 3px solid black;
+    }
 `
 
 export const StyledPopularProductBox = styled.div`
