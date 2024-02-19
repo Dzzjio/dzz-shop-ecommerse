@@ -3,6 +3,7 @@ import popularBox from '../../../assets/images/popular-product-gray-box.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import { FC } from "react";
 
 interface PopularProductBoxProps {
     productName: string;
@@ -12,7 +13,7 @@ interface PopularProductBoxProps {
 
 }
 
-const PopularProductBox: React.FC<PopularProductBoxProps> = ({ productName, price, sale, newItem }) => {
+const PopularProductBox: FC<PopularProductBoxProps> = ({ productName, price, sale, newItem }) => {
 
     return (
         <StyledPopularProductBox>
