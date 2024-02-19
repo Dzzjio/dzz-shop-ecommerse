@@ -2,7 +2,7 @@ import { Container } from "components/styled/container";
 import { PopularProductsContainer } from "./styled";
 import { Title } from "components/styled/title";
 import BoxComponent, { BoxProps } from "../box/box";
-import { shuffleArray } from "helpers/utils";
+import { shuffleArray } from "components/helpers/utils";
 import { useEffect, useState } from "react";
 
 const PopularProducts = () => {
