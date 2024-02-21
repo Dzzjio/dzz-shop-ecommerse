@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Box = styled.div`
   width: 100%;
   height: 350px;
-  margin: auto;
+  margin: 20px auto;
   border-radius: 10px;
   overflow: hidden;
 
@@ -68,6 +68,7 @@ export const Box = styled.div`
     padding: 0 5px;
     font-weight: bold;
     font-size: 15px;
+    margin-top: 20px;
   }
 
   .box-text .title-div {

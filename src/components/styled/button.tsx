@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const CustomButton = styled.button<IProps>`
-  border-radius: 12px;
+  border-radius: 30px;
   padding: 8px 14px;
   font-size: 14px;
   cursor: pointer;
