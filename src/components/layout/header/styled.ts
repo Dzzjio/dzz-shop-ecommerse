@@ -53,6 +53,13 @@ export const HeaderContainer = styled.header`
             align-items: center;
             justify-content: center;
 
+            & > * {
+                display: flex;
+                align-items: center;
+                color: black;
+                text-decoration: none;
+            }
+
             & > span {
                 position: relative;                
 
