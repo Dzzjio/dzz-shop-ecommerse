@@ -58,7 +58,7 @@ export const Box = styled.div`
 
   div.absolute-icons .icons:hover {
     background-color: white;
-    color: red;
+    color: #000;
     cursor: pointer;
   }
 
