@@ -1,8 +1,8 @@
 import { FC, memo } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
-import Homepage from 'pages/Home'
-import Shop from 'pages/Shop'
+import Homepage from 'pages/home'
+import Shop from 'pages/shop'
 
 
 interface IProps {
