@@ -5,6 +5,12 @@ export const TagsContainer = styled.div`
     padding: 3px 6px;
     border: 1px solid black;
     border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: black;
+    }
   }
 
   .tag-span-container {
