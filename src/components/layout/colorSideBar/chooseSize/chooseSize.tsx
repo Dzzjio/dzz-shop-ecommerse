@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from 'react';
 import { SizeContainer } from './styled';
 
 interface IProps {
-  onChange: (value: string) => void
+  onChange: (value: string) => void 
 }
 
 const ChooseSize: FC<IProps> = ({ onChange }) => {
