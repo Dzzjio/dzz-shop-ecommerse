@@ -28,6 +28,7 @@ export const ColorSidebarContainer = styled.div`
     box-sizing: border-box;
     width: 100%;
     padding: 10px;
+    border: 2px solid black;
     border-radius: 6px;
     outline: none;
   }
