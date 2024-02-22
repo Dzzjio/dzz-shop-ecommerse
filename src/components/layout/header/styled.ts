@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom';
 
 export const Star = styled.div`
     position:relative;
@@ -76,6 +77,23 @@ export const HeaderContainer = styled.header`
         }
     }
 `
+
+export const StyledLink = styled(NavLink)`
+
+    &:hover {
+        & ${Star}::before,
+        & ${Star}::after {
+            background: black;
+        }
+    }
+
+    &.active {
+        & ${Star}::before,
+        & ${Star}::after {
+            background: black;
+        }
+    }
+`;
 
 export const HeaderRightSide = styled.div`
     display: flex;
