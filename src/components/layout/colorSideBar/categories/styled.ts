@@ -6,5 +6,10 @@ export const CategoriesContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+    cursor: pointer;
+
+    & > span:hover {
+      text-decoration: underline;
+    }
   }
 `
