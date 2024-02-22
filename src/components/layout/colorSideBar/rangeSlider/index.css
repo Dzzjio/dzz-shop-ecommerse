@@ -9,6 +9,10 @@
     position: relative;
     min-height: 20px;
   }
+
+  #toSlider {
+    background: linear-gradient(to right, rgb(198, 198, 198) 0%, rgb(198, 198, 198) 3%, rgb(0, 0, 0) 3%, rgb(0, 0, 0) 70%, rgb(198, 198, 198) 70%, rgb(198, 198, 198) 100%);
+  }
   
   .form_control {
     position: relative;

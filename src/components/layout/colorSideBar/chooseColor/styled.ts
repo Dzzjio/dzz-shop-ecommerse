@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ColorsContainer = styled.div`
   .color-span-container {
     display: flex;
-    gap: 8px;
+    gap: 2px;
     width: 100%;
     flex-wrap: wrap;
   }

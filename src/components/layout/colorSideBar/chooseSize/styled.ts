@@ -9,12 +9,13 @@ export const SizeContainer = styled.div`
 
   .size-span {
     border: 1px solid black;
-    width: 20px;
-    height: 20px;
-    text-align: center;
+    width: 16px;
+    height: 16px;
     border-radius: 100%;
     padding: 5px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     user-select: none;
 

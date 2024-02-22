@@ -9,7 +9,7 @@ const RangeSlider: React.FC = () => {
     controlSlider: HTMLElement,
   ) => {
     const [from, to] = getParsed(fromInput, toInput)
-    fillSlider(fromInput, toInput, '#C6C6C6', '#25daa5', controlSlider)
+    fillSlider(fromInput, toInput, '#000', '#000', controlSlider)
     if (from > to) {
       fromSlider.value = to.toString()
       fromInput.value = to.toString()
@@ -132,9 +132,9 @@ const RangeSlider: React.FC = () => {
           type="range"
           defaultValue="10"
           min="0"
-          max="100"
+          max="999"
         />
-        <input id="toSlider" type="range" defaultValue="40" min="0" max="100" />
+        <input id="toSlider" type="range" defaultValue="40" min="0" max="999" />
       </div>
       <div className="form_control">
         <div className="form_control_container">
