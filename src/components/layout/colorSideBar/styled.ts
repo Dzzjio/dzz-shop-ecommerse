@@ -51,9 +51,16 @@ export const ColorSidebarContainer = styled.div`
     width: 30%;
     color: white;
     background-color: black;
-    border: none;
+    border: 1px solid black;
     padding: 10px 0;
     border-radius: 6px;
     font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      color: black;
+      background-color: white;
+      border: 1px solid black;
+    }
   }
 `
