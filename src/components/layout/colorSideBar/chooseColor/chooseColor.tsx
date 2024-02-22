@@ -8,7 +8,7 @@ interface IProps {
 const ChooseColor: FC<IProps> = ({ onChange }) => {
   const [active, setActive] = useState<string>('')
   const colors = [
-    '#000',
+    'black',
     'cyan',
     'lightgreen',
     'pink',

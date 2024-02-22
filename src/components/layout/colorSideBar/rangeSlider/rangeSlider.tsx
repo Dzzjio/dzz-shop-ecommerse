@@ -25,7 +25,7 @@ const RangeSlider: React.FC = () => {
     controlSlider: HTMLElement,
   ) => {
     const [from, to] = getParsed(fromInput, toInput)
-    fillSlider(fromInput, toInput, '#C6C6C6', '#25daa5', controlSlider)
+    fillSlider(fromInput, toInput, '#fff', '#fff', controlSlider)
     setToggleAccessible(toInput)
     if (from <= to) {
       toSlider.value = to.toString()
@@ -134,7 +134,7 @@ const RangeSlider: React.FC = () => {
           min="0"
           max="999"
         />
-        <input id="toSlider" type="range" defaultValue="40" min="0" max="999" />
+        <input id="toSlider" type="range" defaultValue="200" min="0" max="999" />
       </div>
       <div className="form_control">
         <div className="form_control_container">
@@ -160,7 +160,7 @@ const RangeSlider: React.FC = () => {
             className="form_control_container__time__input"
             type="number"
             id="toInput"
-            defaultValue="40"
+            defaultValue="200"
             min="0"
             max="100"
           />
