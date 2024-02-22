@@ -15,6 +15,7 @@ interface IFilter {
   search: string;
   color: string;
   size: string;
+  category: string;
 }
 
 const ColorSidebar = () => {
@@ -22,6 +23,7 @@ const ColorSidebar = () => {
     search: "",
     color: "",
     size: "",
+    category: '',
   });
 
   useEffect(() => {
@@ -57,7 +59,7 @@ const ColorSidebar = () => {
       <RangeSlider />
       <ChooseColor onChange={(value: string) => updateFilter("color", value)} />
       <ChooseSize onChange={(value: string) => updateFilter("size", value)} />
-      <Categories />
+      <Categories onChange={(value: string) => updateFilter("category", value)} />
       <Tags />
 
       <button className="reset-button">Reset</button>
