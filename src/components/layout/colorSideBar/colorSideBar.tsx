@@ -1,9 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ColorSidebarContainer } from "./styled";
-import {
-  faMagnifyingGlass,
-  faSliders,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faSliders } from "@fortawesome/free-solid-svg-icons";
 import RangeSlider from "./rangeSlider/rangeSlider";
 import ChooseColor from "./chooseColor/chooseColor";
 import ChooseSize from "./chooseSize/chooseSize";
@@ -20,13 +17,15 @@ interface IFilter {
 }
 
 const ColorSidebar = () => {
-  const [filters, setFilter] = useState<IFilter>({
-    search: '',
-    color: '',
-    size: '',
-    category: '',
-    tags: '',
-  });
+  const initialFilters: IFilter = {
+    search: "",
+    color: "",
+    size: "",
+    category: "",
+    tags: "",
+  };
+
+  const [filters, setFilters] = useState<IFilter>(initialFilters);
 
   useEffect(() => {
     // api send back filters
@@ -34,9 +33,15 @@ const ColorSidebar = () => {
   }, [filters]);
 
   const updateFilter = (key: keyof IFilter, value: string) => {
-    const filterCopy = { ...filters };
-    filterCopy[key] = value;
-    setFilter(filterCopy);
+    setFilters((prevFilters) => ({
+      ...prevFilters,
+      [key]: value,
+    }));
+  };
+
+  const resetFilters = () => {
+    setFilters(initialFilters);
+    window.history.replaceState({}, document.title, window.location.pathname);
   };
 
   return (
@@ -64,7 +69,7 @@ const ColorSidebar = () => {
       <Categories onChange={(value: string) => updateFilter("category", value)} />
       <Tags onChange={(value: string) => updateFilter("tags", value)}/>
 
-      <button className="reset-button">Reset</button>
+      <button className="reset-button" onClick={resetFilters}>Reset</button>
     </ColorSidebarContainer>
   );
 };
