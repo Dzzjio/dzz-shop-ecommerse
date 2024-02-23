@@ -5,7 +5,6 @@ export const Box = styled.div`
   height: 350px;
   margin: 20px auto;
   border-radius: 10px;
-  overflow: hidden;
 
   .box {
     height: 85%;
