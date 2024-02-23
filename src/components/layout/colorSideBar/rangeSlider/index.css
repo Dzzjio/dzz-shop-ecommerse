@@ -10,7 +10,7 @@
     min-height: 20px;
   }
 
-  #toSlider {
+  input #toSlider {
     background: linear-gradient(to right, rgb(198, 198, 198) 0%, rgb(198, 198, 198) 3%, rgb(0, 0, 0) 3%, rgb(0, 0, 0) 70%, rgb(198, 198, 198) 70%, rgb(198, 198, 198) 100%);
   }
   
@@ -39,6 +39,7 @@
     border-radius: 50%;
     box-shadow: 0 0 0 1px #C6C6C6;
     cursor: pointer;
+    border: 1px solid black;
   }
   
   input[type=range]::-moz-range-thumb {
@@ -52,7 +53,7 @@
   }
   
   input[type=range]::-webkit-slider-thumb:hover {
-    background: #f7f7f7;
+    background: #fff;
   }
   
   input[type="number"] {
