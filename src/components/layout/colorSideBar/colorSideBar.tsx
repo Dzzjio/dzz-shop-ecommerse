@@ -16,14 +16,16 @@ interface IFilter {
   color: string;
   size: string;
   category: string;
+  tags: string;
 }
 
 const ColorSidebar = () => {
   const [filters, setFilter] = useState<IFilter>({
-    search: "",
-    color: "",
-    size: "",
+    search: '',
+    color: '',
+    size: '',
     category: '',
+    tags: '',
   });
 
   useEffect(() => {
@@ -60,7 +62,7 @@ const ColorSidebar = () => {
       <ChooseColor onChange={(value: string) => updateFilter("color", value)} />
       <ChooseSize onChange={(value: string) => updateFilter("size", value)} />
       <Categories onChange={(value: string) => updateFilter("category", value)} />
-      <Tags />
+      <Tags onChange={(value: string) => updateFilter("tags", value)}/>
 
       <button className="reset-button">Reset</button>
     </ColorSidebarContainer>
