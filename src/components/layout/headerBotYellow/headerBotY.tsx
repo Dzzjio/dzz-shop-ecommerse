@@ -1,10 +1,9 @@
 import { StyledHeaderBotY } from "./styled";
-import headerImg from '../../../assets/images/yellow-header-img.png'
 
-const HeaderBotYellow = () => {
+const HeaderBotYellow = ({ imgUrl }: { imgUrl: string }) => {
     return (
         <StyledHeaderBotY>
-            <img src={headerImg} alt="headerImg" />
+            <img src={imgUrl} alt="ps5" />
         </StyledHeaderBotY>
     )
 }
