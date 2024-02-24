@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Homepage from 'pages/home'
 import Shop from 'pages/shop'
 import BlogPage from 'pages/blog'
+import ContactPage from 'pages/contact'
 
 
 interface IProps {
@@ -17,6 +18,7 @@ const Router: FC<IProps> = ({ lang }) => {
         <Route index element={<Homepage />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/blog' element={<BlogPage />} />
+        <Route path='/contact' element={<ContactPage />} />
         <Route path="*" element={<Homepage />} />
       </Route>
     </Routes>
