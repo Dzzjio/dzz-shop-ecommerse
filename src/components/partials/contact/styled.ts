@@ -4,7 +4,7 @@ export const StyledContactContainer = styled.div`
     position: relative;
     display: flex;
     width: 1260px;
-    margin: 0 auto;
+    margin: 20px auto;
 `
 
 export const LeftStyledContactContainer = styled.div`
