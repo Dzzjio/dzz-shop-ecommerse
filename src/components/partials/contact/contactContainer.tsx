@@ -33,6 +33,15 @@ const ContactContainer = () => {
         console.log(formData);
     };
 
+    const alertData = () => {
+        alert(`
+        name: ${formData.name},
+        email: ${formData.email},
+        phone number: ${formData.phoneNumber},
+        message: ${formData.message}
+        `)
+    }
+
     return (
         <StyledContactContainer>
             <LeftStyledContactContainer>
@@ -91,7 +100,7 @@ const ContactContainer = () => {
                         />
                     </div>
                     <div>
-                        <button type="submit">Submit</button>
+                        <button onClick={alertData} type="submit">Submit</button>
                     </div>
                 </form>
             </LeftStyledContactContainer>
