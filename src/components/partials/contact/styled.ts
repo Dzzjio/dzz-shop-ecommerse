@@ -86,6 +86,7 @@ export const RightStyledContactContainer = styled.div`
 
     & > h2 {
         font-size: 100px;
+        margin-left: 150px;
         font-weight: bold;
         color: transparent;
         -webkit-text-stroke: 1px #ccc;
