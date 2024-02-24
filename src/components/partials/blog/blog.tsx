@@ -5,6 +5,9 @@ const BlogContainer = () => {
     return (
         <StyledBlogBoxContainer>
             <BlogBox />
+            <BlogBox />
+            <BlogBox />
+            <BlogBox />
         </StyledBlogBoxContainer>
     )
 }

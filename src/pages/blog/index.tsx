@@ -1,10 +1,12 @@
 import BlogContainer from "components/partials/blog/blog";
+import { StyledBlogPage } from "./styled";
 
 const BlogPage = () => {
     return (
-        <div>
+        <StyledBlogPage>
             <BlogContainer />
-        </div>
+            <button> Load More</button>
+        </StyledBlogPage>
     )
 }
 

@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
 export const StyledBlogBox = styled.div`
-    width: 350px;
-    height: 350px;
+    width: 620px;
+    height: 610px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -19,17 +19,20 @@ export const StyledBlogBox = styled.div`
 
     & > div {
         position: absolute;
+        max-width: 440px;
         width: 60%;
+        max-height: 220px;
         height: 33%;
         bottom: 0;
         left: 0;
         background-color: black;
         z-index: 10;
         border-radius: 0 20px 0 0;
-        padding: 20px;
+        padding: 30px;
 
         & > p {
-            margin: 8px 0;
+            margin: 40px 0;
+            font-size: 24px;
         }
 
         & > div {
@@ -38,7 +41,7 @@ export const StyledBlogBox = styled.div`
             border-radius: 5px;
 
             & > p {
-                font-size: 10px;
+                font-size: 12px;
                 font-weight: bold;
                 color: #000;
                 padding: 5px;
@@ -54,5 +57,5 @@ export const StyledBlogBox = styled.div`
 
 export const StyledReadMore = styled(Link)`
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
 `
