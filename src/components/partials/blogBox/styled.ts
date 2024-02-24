@@ -58,4 +58,8 @@ export const StyledBlogBox = styled.div`
 export const StyledReadMore = styled(Link)`
     text-decoration: none;
     font-size: 15px;
+
+    &:hover {
+        text-decoration: underline;
+    }
 `
