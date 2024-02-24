@@ -91,4 +91,24 @@ export const RightStyledContactContainer = styled.div`
         -webkit-text-stroke: 1px #ccc;
         text-stroke: 1px #ccc;
     }
+
+    & > .location-img {
+        width: 20px;
+        position: absolute;
+    }
+
+    & > .location-img-1 {
+        top: 90px;
+        left: 500px;
+    }
+
+    & > .location-img-2 {
+        top: 90px;
+        left: 100px;
+    }
+
+    & > .location-img-3 {
+        top: 150px;
+        left: 400px;
+    }
 `

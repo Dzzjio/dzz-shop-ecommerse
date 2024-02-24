@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { LeftStyledContactContainer, RightStyledContactContainer, StyledContactContainer } from "./styled";
 import mapImg from '../../../assets/images/map-img.png'
+import redLocation from '../../../assets/images/red-location.png'
+import blackLocation from '../../../assets/images/black-loction.png'
 
 interface FormData {
     name: string;
@@ -96,6 +98,9 @@ const ContactContainer = () => {
 
             <RightStyledContactContainer>
                 <img src={mapImg} alt="world-map-image" />
+                <img className='location-img location-img-1' src={redLocation} alt="red-location" />
+                <img className='location-img location-img-2' src={blackLocation} alt="black-location" />
+                <img className='location-img location-img-3' src={blackLocation} alt="black-location" />
                 <h2>CONTACT US</h2>
             </RightStyledContactContainer>
         </StyledContactContainer>
