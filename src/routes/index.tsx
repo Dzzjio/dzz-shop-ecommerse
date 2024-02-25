@@ -5,6 +5,7 @@ import Homepage from 'pages/home'
 import Shop from 'pages/shop'
 import BlogPage from 'pages/blog'
 import ContactPage from 'pages/contact'
+import AboutPage from 'pages/about'
 
 
 interface IProps {
@@ -19,6 +20,7 @@ const Router: FC<IProps> = ({ lang }) => {
         <Route path='/shop' element={<Shop />} />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/contact' element={<ContactPage />} />
+        <Route path='/about' element={<AboutPage />} />
         <Route path="*" element={<Homepage />} />
       </Route>
     </Routes>
