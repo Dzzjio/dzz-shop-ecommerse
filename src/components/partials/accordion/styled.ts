@@ -13,8 +13,8 @@ export const AccordionHeader = styled.div`
     display: flex;
     justify-content: space-between;
 
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
     cursor: pointer;
     border: 1px solid black;
     border-radius: 10px;
@@ -36,5 +36,5 @@ export const AccordionHeader = styled.div`
 `
 
 export const AccordionContent = styled.div`
-    padding: 0 15px 15px 15px;
+    padding: 0 15px 20px 15px;
 `

@@ -15,18 +15,21 @@ export const StyledAboutContainerTopSectionLeft = styled.div`
         margin: 0;
         font-size: 35px;
         margin-right: 80px;
+        margin: 0 80px 40px 0 ;
     }
 
     & > p {
         color: #3b3b3b;
         font-size: 17px;
         margin-right: 20px;
+        margin-bottom: 30px;
     }
 
     & > div  {
         display: flex;
         align-items: center;
         margin-top: 20px;
+        margin: 40px 0;
 
         & > div > * {
             margin: 0;
@@ -99,7 +102,7 @@ export const StyledAboutContainerTopSectionRightStats = styled.div`
         margin-right: 50px;
 
         & > h3 {
-            font-size: 50px;
+            font-size: 60px;
         }
 
         & > p {
