@@ -1,10 +1,18 @@
 import Accordion from "../accordion/accordion";
-import { StyledAboutContainer, StyledAboutContainerMidSection, StyledAboutContainerMidSectionContent, StyledAboutContainerMidSectionContentLeft, StyledAboutContainerMidSectionContentRight, StyledAboutContainerTopSection, StyledAboutContainerTopSectionLeft, StyledAboutContainerTopSectionRight, StyledAboutContainerTopSectionRightFirstRow, StyledAboutContainerTopSectionRightSecondRow, StyledAboutContainerTopSectionRightStats, StyledAboutContainerTopSectionRightThirdRow, StyledUserStory } from "./styled";
+import { StyledAboutContainer, StyledAboutContainerBotSection, StyledAboutContainerBotSectionLeft, StyledAboutContainerBotSectionRight, StyledAboutContainerMidSection, StyledAboutContainerMidSectionContent, StyledAboutContainerMidSectionContentLeft, StyledAboutContainerMidSectionContentRight, StyledAboutContainerTopSection, StyledAboutContainerTopSectionLeft, StyledAboutContainerTopSectionRight, StyledAboutContainerTopSectionRightFirstRow, StyledAboutContainerTopSectionRightSecondRow, StyledAboutContainerTopSectionRightStats, StyledAboutContainerTopSectionRightThirdRow, StyledUserStory } from "./styled";
 import midSectionImg from '../../../assets/images/about-mid-section-img.png'
 import product1 from '../../../assets/images/product-1.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import armani from '../../../assets/images/armani.png'
+import gucci from '../../../assets/images/gucci.jpg'
+import prada from '../../../assets/images/prada.jpg'
+import chanel from '../../../assets/images/chanel.jpg'
+import dior from '../../../assets/images/dior.jpg'
+import dandg from '../../../assets/images/dandg.jpg'
+import versace from '../../../assets/images/versace.jpg'
+import balenciaga from '../../../assets/images/balenciaga.jpg'
 
 const questionAnswerObj = [
     {
@@ -49,6 +57,8 @@ const users = [
         userStory: "Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. Advantages prosperous remarkably my inhabiting so reasonably be if. Too any appearance announcing impossible one. Out mrs means heart ham tears shall power every."
     }
 ];
+
+const ArrOfAboutBottomImgs = [armani, gucci, prada, chanel, dior, dandg, versace, balenciaga ]
 
 const AboutContainer = () => {
 
@@ -130,6 +140,19 @@ const AboutContainer = () => {
                     </StyledAboutContainerMidSectionContentRight>
                 </StyledAboutContainerMidSectionContent>
             </StyledAboutContainerMidSection>
+
+            <StyledAboutContainerBotSection>
+                <StyledAboutContainerBotSectionLeft>
+                    <h3>We are just keep growing with 6.3k trusted companies</h3>
+                    <p>Nullam nec ipsum luctus, vehicula massa in, dictum sapien. Aenean quis luctus ert nulla quam augue.</p>
+                </StyledAboutContainerBotSectionLeft>
+
+                <StyledAboutContainerBotSectionRight>
+                {ArrOfAboutBottomImgs.map((image, index) => (
+                    <img key={index} src={image} alt={`Armani ${index}`} />
+                ))}
+                </StyledAboutContainerBotSectionRight>
+            </StyledAboutContainerBotSection>
         </StyledAboutContainer>
     )
 }

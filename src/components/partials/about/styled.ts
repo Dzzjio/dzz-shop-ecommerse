@@ -208,3 +208,44 @@ export const StyledAboutContainerMidSectionContentRight = styled.div`
 `
 
 // bot section
+
+export const StyledAboutContainerBotSection = styled.section`
+    width: 100%;
+    height: 230px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
+export const StyledAboutContainerBotSectionLeft = styled.div`
+    height: 80%;
+    display: flex;
+    max-width: 420px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    & > h3 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    & > p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+`
+
+export const StyledAboutContainerBotSectionRight = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+
+    & > img {
+        width : 190px;
+        height: 100px;
+        object-fit: cover;
+    }
+`
