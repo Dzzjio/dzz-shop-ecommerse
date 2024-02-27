@@ -80,6 +80,7 @@ export const StyledAboutContainerTopSectionRightFirstRow = styled.div`
 
         & > img {
             width: 440px;
+            height: 261px;
             border-radius: 10px;
         }
     }
