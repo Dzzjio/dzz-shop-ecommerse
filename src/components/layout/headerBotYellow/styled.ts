@@ -13,6 +13,7 @@ export const StyledHeaderBotY = styled.div`
         bottom: 0;
         right: 290px;
         width: 300px;
-        height: auto; 
+        height: 100%;
+        object-fit: cover; 
     }
 `;
