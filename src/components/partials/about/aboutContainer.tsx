@@ -1,5 +1,5 @@
 import Accordion from "../accordion/accordion";
-import { StyledAboutContainer, StyledAboutContainerTopSection, StyledAboutContainerTopSectionLeft, StyledAboutContainerTopSectionRight, StyledAboutContainerTopSectionRightFirstRow, StyledAboutContainerTopSectionRightSecondRow, StyledAboutContainerTopSectionRightStats, StyledAboutContainerTopSectionRightThirdRow } from "./styled";
+import { StyledAboutContainer, StyledAboutContainerMidSection, StyledAboutContainerTopSection, StyledAboutContainerTopSectionLeft, StyledAboutContainerTopSectionRight, StyledAboutContainerTopSectionRightFirstRow, StyledAboutContainerTopSectionRightSecondRow, StyledAboutContainerTopSectionRightStats, StyledAboutContainerTopSectionRightThirdRow } from "./styled";
 
 const questionAnswerObj = [
     {
@@ -62,6 +62,10 @@ const AboutContainer = () => {
                     <StyledAboutContainerTopSectionRightThirdRow></StyledAboutContainerTopSectionRightThirdRow>
                 </StyledAboutContainerTopSectionRight>
             </StyledAboutContainerTopSection>
+
+            <StyledAboutContainerMidSection>
+                hello ftm the other side
+            </StyledAboutContainerMidSection>
         </StyledAboutContainer>
     )
 }

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+// top section
+
 export const StyledAboutContainer = styled.div`
     margin: 50px auto;
 `
@@ -108,7 +110,13 @@ export const StyledAboutContainerTopSectionRightStats = styled.div`
         & > p {
             font-weight: bold;
         }
-    }
+    }   
+`
 
+// mid section
+
+export const StyledAboutContainerMidSection = styled.section`
     
 `
+
+// bot section
