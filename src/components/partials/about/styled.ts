@@ -76,7 +76,12 @@ export const StyledAboutContainerTopSectionRightFirstRow = styled.div`
 
     & > div:first-child {
         width: 440px;
+        border-radius: 10px;
 
+        & > img {
+            width: 440px;
+            border-radius: 10px;
+        }
     }
 
     & > div:last-child {
@@ -95,9 +100,9 @@ export const StyledAboutContainerTopSectionRightFirstRow = styled.div`
 
 export const StyledAboutContainerTopSectionRightSecondRow = styled.div`
     height: 544px;
-    border-radius: 10px;
     
     & > img {
+        border-radius: 10px;
         object-fit: cover;
         overflow: hidden;
     }
@@ -110,6 +115,7 @@ export const StyledAboutContainerTopSectionRightThirdRow = styled.div`
     & > img {
         object-fit: cover;
         overflow: hidden;
+        border-radius: 10px;
     }
 `
 
