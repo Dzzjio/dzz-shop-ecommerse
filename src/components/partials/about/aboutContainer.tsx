@@ -2,6 +2,10 @@ import Accordion from "../accordion/accordion";
 import { StyledAboutContainer, StyledAboutContainerBotSection, StyledAboutContainerBotSectionLeft, StyledAboutContainerBotSectionRight, StyledAboutContainerMidSection, StyledAboutContainerMidSectionContent, StyledAboutContainerMidSectionContentLeft, StyledAboutContainerMidSectionContentRight, StyledAboutContainerTopSection, StyledAboutContainerTopSectionLeft, StyledAboutContainerTopSectionRight, StyledAboutContainerTopSectionRightFirstRow, StyledAboutContainerTopSectionRightSecondRow, StyledAboutContainerTopSectionRightStats, StyledAboutContainerTopSectionRightThirdRow, StyledUserStory } from "./styled";
 import midSectionImg from '../../../assets/images/about-mid-section-img.png'
 import product1 from '../../../assets/images/product-1.jpg'
+import product2 from '../../../assets/images/product-2.jpg'
+import product3 from '../../../assets/images/product-3.webp'
+import product4 from '../../../assets/images/product-4.jpeg'
+import product5 from '../../../assets/images/product-5.webp'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -102,11 +106,15 @@ const AboutContainer = () => {
 
                 <StyledAboutContainerTopSectionRight>
                     <StyledAboutContainerTopSectionRightFirstRow>
-                        <div></div>
-                        <div></div> 
+                        <div><img src={product2} alt="product2" /></div>
+                        <div><img src={product3} alt="product3" /></div> 
                     </StyledAboutContainerTopSectionRightFirstRow>
-                    <StyledAboutContainerTopSectionRightSecondRow></StyledAboutContainerTopSectionRightSecondRow>
-                    <StyledAboutContainerTopSectionRightThirdRow></StyledAboutContainerTopSectionRightThirdRow>
+                    <StyledAboutContainerTopSectionRightSecondRow>
+                        <img src={product4} alt="product4" />
+                    </StyledAboutContainerTopSectionRightSecondRow>
+                    <StyledAboutContainerTopSectionRightThirdRow>
+                        <img src={product5} alt="product5" />
+                    </StyledAboutContainerTopSectionRightThirdRow>
                 </StyledAboutContainerTopSectionRight>
             </StyledAboutContainerTopSection>
 

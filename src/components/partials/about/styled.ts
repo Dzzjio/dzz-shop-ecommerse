@@ -76,9 +76,7 @@ export const StyledAboutContainerTopSectionRightFirstRow = styled.div`
 
     & > div:first-child {
         width: 440px;
-        display: flex;
-        border-radius: 10px;
-        background-color: gray;
+
     }
 
     & > div:last-child {
@@ -87,16 +85,32 @@ export const StyledAboutContainerTopSectionRightFirstRow = styled.div`
         border-radius: 10px;
         background-color: gray;
     }
+
+    & > div > img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
 `
 
 export const StyledAboutContainerTopSectionRightSecondRow = styled.div`
     height: 544px;
-    background-color: gray;
+    border-radius: 10px;
+    
+    & > img {
+        object-fit: cover;
+        overflow: hidden;
+    }
 `
 
 export const StyledAboutContainerTopSectionRightThirdRow = styled.div`
     height: 264px;
-    background-color: gray;
+    border-radius: 10px;
+
+    & > img {
+        object-fit: cover;
+        overflow: hidden;
+    }
 `
 
 export const StyledAboutContainerTopSectionRightStats = styled.div`
