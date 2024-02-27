@@ -1,5 +1,10 @@
 import Accordion from "../accordion/accordion";
-import { StyledAboutContainer, StyledAboutContainerMidSection, StyledAboutContainerTopSection, StyledAboutContainerTopSectionLeft, StyledAboutContainerTopSectionRight, StyledAboutContainerTopSectionRightFirstRow, StyledAboutContainerTopSectionRightSecondRow, StyledAboutContainerTopSectionRightStats, StyledAboutContainerTopSectionRightThirdRow } from "./styled";
+import { StyledAboutContainer, StyledAboutContainerMidSection, StyledAboutContainerMidSectionContent, StyledAboutContainerMidSectionContentLeft, StyledAboutContainerMidSectionContentRight, StyledAboutContainerTopSection, StyledAboutContainerTopSectionLeft, StyledAboutContainerTopSectionRight, StyledAboutContainerTopSectionRightFirstRow, StyledAboutContainerTopSectionRightSecondRow, StyledAboutContainerTopSectionRightStats, StyledAboutContainerTopSectionRightThirdRow, StyledUserStory } from "./styled";
+import midSectionImg from '../../../assets/images/about-mid-section-img.png'
+import product1 from '../../../assets/images/product-1.jpg'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowAltCircleLeft, faArrowAltCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const questionAnswerObj = [
     {
@@ -24,20 +29,52 @@ const questionAnswerObj = [
     }
 ]
 
+const users = [
+    { 
+        name: 'Gio Jioshvili',
+        position: 'CEO and founder',
+        imageUrl: 'https://hips.hearstapps.com/hmg-prod/images/former-u-s-president-donald-trump-speaks-to-reporters-news-photo-1680289458.jpg?crop=0.643xw:0.963xh;0.220xw,0.0268xh&resize=1200:*',
+        userStory: "Her companions instrument set estimating sex remarkably solicitude motionless. Property men the why smallest graceful day insisted required. Inquiry justice country old placing sitting any ten age. Looking venture justice in evident in totally he do ability. Be is lose girl long of up give. Trifling wondered unpacked ye at he. In household certainty an on tolerably difficult."
+    },
+    { 
+        name: 'Michael Balzary', 
+        position: 'Musician', 
+        imageUrl: 'https://static01.nyt.com/images/2019/10/27/arts/27FLEA-MEMOIR-1/merlin_162823140_1c1f1729-64c9-48e6-89d8-646926655fb6-superJumbo.jpg',
+        userStory: "Do am he horrible distance marriage so although. Afraid assure square so happen mr an before. His many same been well can high that. Forfeited did law eagerness allowance improving assurance bed. Had saw put seven joy short first. Pronounce so enjoyment my resembled in forfeited sportsman. Which vexed did began son abode short may. Interested astonished he at cultivated or me."
+    },
+    { 
+        name: 'crazy joni', 
+        position: 'crazy addict', 
+        imageUrl: 'https://server3.intermedia.ge/vtm/170/170897.jpg',
+        userStory: "Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. Advantages prosperous remarkably my inhabiting so reasonably be if. Too any appearance announcing impossible one. Out mrs means heart ham tears shall power every."
+    }
+];
+
 const AboutContainer = () => {
+
+    const [currentUserIndex, setCurrentUserIndex] = useState(0);
+
+    const handleNextUser = () => {
+        setCurrentUserIndex((prevIndex) => (prevIndex + 1) % users.length);
+    };
+
+    const handlePrevUser = () => {
+        setCurrentUserIndex((prevIndex) => (prevIndex - 1 + users.length) % users.length);
+    };
+
     return (
         <StyledAboutContainer>
             <StyledAboutContainerTopSection>
                 <StyledAboutContainerTopSectionLeft>
                     <h3>Untouch Your Style, Quality, Individuality - Redefining Fashion Together.</h3>
                     <p>At Untouch, we are on a mission to redefine fashion by blending style, quality, and individuality into every garment we offer. We believe that what you wear is an extension of your unique personality, and it should reflect your values and aspirations.</p>
-                    <div>
+                    <StyledUserStory>
                         <img src="https://hips.hearstapps.com/hmg-prod/images/former-u-s-president-donald-trump-speaks-to-reporters-news-photo-1680289458.jpg?crop=0.643xw:0.963xh;0.220xw,0.0268xh&resize=1200:*" alt="djt" />
                         <div>
                             <h5>Gio Jioshvili</h5>
                             <p>CEO and founder</p>
                         </div>
-                    </div>
+                    </StyledUserStory>
                     <div>
                         < Accordion items={questionAnswerObj} />
                     </div>
@@ -64,13 +101,37 @@ const AboutContainer = () => {
             </StyledAboutContainerTopSection>
 
             <StyledAboutContainerMidSection>
-                hello ftm the other side
+                <img src={midSectionImg} alt="midSectionImg" />
+                <StyledAboutContainerMidSectionContent>
+                    <StyledAboutContainerMidSectionContentLeft>
+                        <div>
+                            <img src={product1} alt="product-1" />
+                        </div>
+                    </StyledAboutContainerMidSectionContentLeft>
+
+                    <StyledAboutContainerMidSectionContentRight>
+                        <h3>What Our Clients Say About Us</h3>
+                        <div>
+                            <p>{users[currentUserIndex].userStory}</p>
+                            <div>
+                                <StyledUserStory>
+                                    <img src={users[currentUserIndex].imageUrl} alt={users[currentUserIndex].name} />
+                                    <div>
+                                        <h5>{users[currentUserIndex].name}</h5>
+                                        <p>{users[currentUserIndex].position}</p>
+                                    </div>
+                                </StyledUserStory>
+                                <div>
+                                    <span onClick={handlePrevUser}><FontAwesomeIcon icon={faArrowAltCircleLeft} /></span>
+                                    <span onClick={handleNextUser}><FontAwesomeIcon icon={faArrowAltCircleRight} /></span>
+                                </div>
+                            </div>
+                        </div>
+                    </StyledAboutContainerMidSectionContentRight>
+                </StyledAboutContainerMidSectionContent>
             </StyledAboutContainerMidSection>
         </StyledAboutContainer>
     )
 }
 
 export default AboutContainer;
-
-
-// https://i.ebayimg.com/images/g/79sAAOSwpzplwuDs/s-l1600.jpg

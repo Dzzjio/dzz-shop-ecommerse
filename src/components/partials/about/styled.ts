@@ -1,5 +1,32 @@
 import styled from "styled-components";
 
+export const StyledUserStory = styled.div`
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin: 40px 0;
+
+    & > div > * {
+        margin: 0;
+    }
+
+    & > div > h5 {
+        font-size: 18px;
+    }
+
+    & > div > p {
+        font-size: 14px;
+    }
+
+    & > img {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+`
+
 // top section
 
 export const StyledAboutContainer = styled.div`
@@ -8,6 +35,7 @@ export const StyledAboutContainer = styled.div`
 
 export const StyledAboutContainerTopSection = styled.section`
     display: flex;
+    gap: 20px;
 `
 
 export const StyledAboutContainerTopSectionLeft = styled.div`
@@ -25,32 +53,6 @@ export const StyledAboutContainerTopSectionLeft = styled.div`
         font-size: 17px;
         margin-right: 20px;
         margin-bottom: 30px;
-    }
-
-    & > div  {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-        margin: 40px 0;
-
-        & > div > * {
-            margin: 0;
-        }
-
-        & > div > h5 {
-            font-size: 18px;
-        }
-
-        & > div > p {
-            font-size: 14px;
-        }
-
-        & > img {
-            width: 60px;
-            height: 60px;
-            border-radius: 30px;
-            margin-right: 20px;
-        }
     }
 `
 
@@ -99,12 +101,15 @@ export const StyledAboutContainerTopSectionRightThirdRow = styled.div`
 
 export const StyledAboutContainerTopSectionRightStats = styled.div`
     margin-top: 20px;
+    display: flex;
 
     & > div {
         margin-right: 50px;
 
         & > h3 {
             font-size: 60px;
+            margin: 0;
+            margin-top: 30px;
         }
 
         & > p {
@@ -116,7 +121,90 @@ export const StyledAboutContainerTopSectionRightStats = styled.div`
 // mid section
 
 export const StyledAboutContainerMidSection = styled.section`
+    margin-top: 50px;
+    width: 99.47vw;
+    margin-left: calc((100% - 100vw) / 2);
     
+    object-fit: cover;
+    position: relative;
+
+    & > img {
+        width: 100%;
+        height: 620px;
+        display: block;
+        margin: 0 auto;
+    }
+`;
+
+export const StyledAboutContainerMidSectionContent = styled.div`
+    position: absolute;
+    width: 1260px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+`
+
+export const StyledAboutContainerMidSectionContentLeft = styled.div`
+    position: relative;
+
+    & > div {
+        position: absolute;
+        bottom: -71.5px;
+
+        & > img {
+            width: 514px;
+            height: 679px;
+            object-fit: cover;
+        }
+    }
+`
+export const StyledAboutContainerMidSectionContentRight = styled.div`
+    width: 630px;
+    box-sizing: border-box;
+
+    & > h3 {
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    & > div {
+        background-color: white;
+        height: 330px;
+        padding: 30px;
+        padding-bottom: 0px;
+        border-radius: 20px;
+
+        & > p {
+            font-size: 20px;
+        }
+
+        & > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & > div > span {
+                background-color: #ffedd4;
+                padding: 10px;
+                border-radius: 20px;
+                margin: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+
+                &:active {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
 `
 
 // bot section

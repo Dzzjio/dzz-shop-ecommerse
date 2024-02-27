@@ -1,5 +1,6 @@
 import { FooterBot, FooterConteiner, FooterInput, FooterTop, FooterTopRecentPostConteiner, InputContainer } from "./styled";
 import logo from '../../../assets/images/logo.png'
+import cards from '../../../assets/images/cards-we-accept.png'
 import footerBoxSmall from '../../../assets/images/footer-gray-box-small.png'// will delete later
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -94,7 +95,7 @@ const Footer = () => {
                     <p>©2024 Dzzjio Shop. All Rights Reserved.</p>
                     <div>
                         <p>We Accept:</p>
-                        <div></div>
+                        <div><img src={cards} alt="cards" /></div>
                     </div>
                 </FooterBot>
             </FooterConteiner>

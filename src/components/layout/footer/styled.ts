@@ -88,6 +88,5 @@ export const FooterBot = styled.div`
     & > div > div {
         width: 200px;
         height: 20px;
-        background-color: gray;
     }
 `
