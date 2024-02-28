@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const PopularProductsContainer = styled.div`
+
     .row {
         margin-top: 25px;
         margin-bottom: 25px;
@@ -10,7 +11,7 @@ export const PopularProductsContainer = styled.div`
 
         & > div {
             flex: 1;
-            min-width: 20%;
+            min-width: 210px;
         }
     }
 `
