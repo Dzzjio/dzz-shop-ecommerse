@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const FooterConteiner = styled.div`
-    width: 1260px;
-    height: 521px;
+    max-width: 1260px;
+    height: auto;
     margin: 0 auto;
     position: relative;
     box-sizing: border-box;
@@ -78,15 +78,5 @@ export const FooterBot = styled.div`
         display: flex;
         align-items: center;
         gap: 3px;
-    }
-
-    & > div > p {
-        display: inline;
-        
-    }
-
-    & > div > div {
-        width: 200px;
-        height: 20px;
     }
 `
