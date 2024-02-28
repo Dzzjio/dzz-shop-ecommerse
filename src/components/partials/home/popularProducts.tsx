@@ -24,8 +24,8 @@ const PopularProducts = () => {
     };
 
     const data: BoxProps[] = shuffleArray([
-      ...Array(4).fill(Item),
-      ...Array(4).fill(Item2),
+      ...Array(6).fill(Item),
+      ...Array(6).fill(Item2),
     ]);
     setProducts(data)
   }, []);

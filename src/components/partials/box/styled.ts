@@ -19,13 +19,13 @@ export const BoxTop = styled.div`
 
   & > span {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 3px 5px;
     font-size: 12px;
     font-weight: bold;
     position: absolute;
-    top: 5px;
-    left: 3px;
+    top: 7px;
+    left: 7px;
   }
 
   & > div {
@@ -39,15 +39,16 @@ export const BoxTop = styled.div`
     right: 5px;
 
     & > * {
-      border: 1px solid gray;
-      background-color: #555;
+      background-color: #141414;
       padding: 8px;
       border-radius: 50%;
       color: white;
+      width: 15px;
+      height: 15px;
 
       &:hover {
         background-color: white;
-        color: #000;
+        color: #141414;
         cursor: pointer;
       }
     }

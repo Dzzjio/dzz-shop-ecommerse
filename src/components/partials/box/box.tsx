@@ -29,7 +29,7 @@ const BoxComponent: FC<BoxProps> = ({ title, price, discount, img, category, }) 
       <BoxBot >
         <div>
           <span>{title}</span>
-          <p>{category}</p>
+          <p>{category}</p> 
         </div>
         <div>
           <span >${price} </span>
