@@ -49,7 +49,7 @@ export const HeaderContainer = styled.header`
         & > li {
             cursor: pointer;
             list-style: none;
-            margin-right: 15px;
+            margin-left: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -76,6 +76,12 @@ export const HeaderContainer = styled.header`
             }
         }
     }
+
+    @media (max-width: 940px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px;
+    }
 `
 
 export const StyledLink = styled(NavLink)`
@@ -95,10 +101,27 @@ export const StyledLink = styled(NavLink)`
     }
 `;
 
+export const HeaderLeftSide = styled.div`
+    @media (max-width: 940px) {
+        margin: 0;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+
+        & > img {
+            margin: 10px 0 !important;
+        }
+    }
+`
+
 export const HeaderRightSide = styled.div`
     display: flex;
     margin: 10px 50px;
     gap: 30px;
+
+    & > div > *.nav-icon {
+        margin-left: 30px;
+    }
 
     & > * {
         cursor: pointer;
@@ -107,5 +130,13 @@ export const HeaderRightSide = styled.div`
     & > div {
         display: flex;
         gap: 15px;
+    }
+
+    @media (max-width: 940px) {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 `
