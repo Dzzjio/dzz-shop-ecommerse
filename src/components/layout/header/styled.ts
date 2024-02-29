@@ -45,6 +45,10 @@ export const HeaderContainer = styled.header`
         display: flex;
         padding: 0;
         margin: 0;
+
+        @media (max-width: 530px) {
+            display: none;
+        }
         
         & > li {
             cursor: pointer;
@@ -80,7 +84,12 @@ export const HeaderContainer = styled.header`
     @media (max-width: 940px) {
         flex-direction: column;
         align-items: center;
-        padding: 20px 20px;
+        padding: 20px;
+    }
+
+    @media (max-width: 530px) {
+        flex-direction: row;
+        padding:0 20px;
     }
 `
 
@@ -111,6 +120,10 @@ export const HeaderLeftSide = styled.div`
         & > img {
             margin: 10px 0 !important;
         }
+    }
+
+    @media (max-width: 530px) {
+        border: none;
     }
 `
 
