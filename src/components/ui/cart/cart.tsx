@@ -1,8 +1,8 @@
 import { FC, useState } from "react"
 import { CartContainer, CartContent, CartContentContainer, CartFooter, CartProducts, CartStatus, CartSubtotal, Layout, WishlistAndCart } from "./styledCart"
 import CartProduct, { ICartProduct } from "./cartProduct"
-import airplane from '../../assets/images/air-plane.png'
-import shippingRange from '../../assets/images/shipping-range.png'
+import airplane from '../../../assets/images/air-plane.png'
+import shippingRange from '../../../assets/images/shipping-range.png'
 
 interface IProps {
     open: boolean
