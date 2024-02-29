@@ -4,6 +4,7 @@ import {  faHeart, faNavicon, faSearch, faShoppingCart, faXmark } from '@fortawe
 import logo from '../../../assets/images/logo.png'
 import { CloseIcon, HeaderContainerMobile, MenuSideBar, NavbarIcon } from './styledresponsive';
 import { useEffect, useState } from 'react';
+import Cart from 'components/ui/cart';
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 610);
@@ -26,6 +27,12 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const [open, setOpen] = useState(false)
+
+  const setBodyFixed = () => {
+    document.body.classList.toggle('fixed')
+  }
+
   return (
     <>
     
@@ -45,7 +52,7 @@ const Header = () => {
         <div>
           <FontAwesomeIcon icon={faSearch} />
           <FontAwesomeIcon icon={faHeart} />
-          <FontAwesomeIcon icon={faShoppingCart} />
+          <FontAwesomeIcon icon={faShoppingCart} onClick={() => {setOpen(true); setBodyFixed()}} />
           <FontAwesomeIcon icon={faNavicon} />
         </div>
       </HeaderRightSide>
@@ -78,6 +85,7 @@ const Header = () => {
         </MenuSideBar>
       )}
     </HeaderContainerMobile>
+    <Cart open={open} onClose={() => {setOpen(false); setBodyFixed()}}/>
     </>
   )
 }
