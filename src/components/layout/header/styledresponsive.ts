@@ -12,7 +12,7 @@ export const HeaderContainerMobile = styled.header`
 
         & > img {
             height: 35px;
-            margin: 0 10px;
+            margin: 15px;
             cursor: pointer;
         }
     }
@@ -80,6 +80,10 @@ export const CloseIcon = styled(FontAwesomeIcon)`
 `
 
 export const NavbarIcon = styled(FontAwesomeIcon)`
+    height: 25px;
+    width: 25px;
+    margin-right: 16px;
+
     @media (max-width: 610px) {
         dislay: none;
     }
