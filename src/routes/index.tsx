@@ -16,14 +16,12 @@ interface IProps {
 const Router: FC<IProps> = ({ lang }) => {
   return (
     <Routes data-lang={lang}>
-      <Route path="/">
         <Route index element={<Homepage />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path="*" element={<ErrorPage />} />
-      </Route>
     </Routes>
   )
 }
