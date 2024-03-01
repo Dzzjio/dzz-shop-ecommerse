@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import LogIn from "./logIn";
 import Register from "./register";
 import { FC } from "react";
+import { AuthContainer } from "./styled";
 
 const AuthPage: FC = () => {
 
@@ -21,10 +22,10 @@ const AuthPage: FC = () => {
       };
 
     return (
-        <div>
+        <AuthContainer>
             <div>same</div>
             <div>{renderComponent()}</div>
-        </div>
+        </AuthContainer>
     );
 };
 
