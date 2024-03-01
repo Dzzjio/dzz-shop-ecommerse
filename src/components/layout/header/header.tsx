@@ -28,7 +28,11 @@ const Header = () => {
         </ul>
       </HeaderLeftSide>
       <HeaderRightSide>
-        <p>Login / Register</p>
+        <p>
+          <span><StyledLink to='/auth/login'>Log In</StyledLink></span>
+          /
+          <span><StyledLink to='/auth/register'>Register</StyledLink></span>
+        </p>
         <div>
           <FontAwesomeIcon icon={faSearch} />
           <FontAwesomeIcon icon={faHeart} />
