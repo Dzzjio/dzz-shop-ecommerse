@@ -145,6 +145,11 @@ export const HeaderRightSide = styled.div`
         gap: 15px;
     }
 
+    & > p > span > * {
+        color: black;
+        text-decoration: none;
+    }
+
     @media (max-width: 940px) {
         margin: 0;
         width: 100%;
