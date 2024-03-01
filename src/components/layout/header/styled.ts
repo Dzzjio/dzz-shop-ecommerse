@@ -148,6 +148,10 @@ export const HeaderRightSide = styled.div`
     & > p > span > * {
         color: black;
         text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     @media (max-width: 940px) {

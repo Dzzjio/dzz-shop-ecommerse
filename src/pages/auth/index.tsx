@@ -29,6 +29,7 @@ const AuthPage: FC = () => {
                     <img src={sharedImg} alt="sharedImg" />
                     test
                 </AuthContainerShared>
+                
                 <AuthContainerUnique>
                     {renderComponent()}
                 </AuthContainerUnique>
