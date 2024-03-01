@@ -2,7 +2,8 @@ import { useLocation } from "react-router-dom";
 import LogIn from "./logIn";
 import Register from "./register";
 import { FC } from "react";
-import { AuthContainer } from "./styled";
+import { AuthContainer, AuthContainerShared, AuthContainerUnique, AuthContentContainer } from "./styled";
+import sharedImg from '../../assets/images/auth-shared-img.png'
 
 const AuthPage: FC = () => {
 
@@ -23,8 +24,15 @@ const AuthPage: FC = () => {
 
     return (
         <AuthContainer>
-            <div>same</div>
-            <div>{renderComponent()}</div>
+            <AuthContentContainer>  
+                <AuthContainerShared>
+                    <img src={sharedImg} alt="sharedImg" />
+                    test
+                </AuthContainerShared>
+                <AuthContainerUnique>
+                    {renderComponent()}
+                </AuthContainerUnique>
+            </AuthContentContainer>
         </AuthContainer>
     );
 };
