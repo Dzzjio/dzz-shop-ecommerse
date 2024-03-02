@@ -26,7 +26,7 @@ const ErrorPage = () => {
                 <ErrorPageContentRight>
                     <h3>OOPS!</h3>
                     <p>Oh, no! This page does not exist.</p>
-                    <Link to='/'>GO TO MAIN PAGE</Link>
+                    <Link to='/'>GO TO HOME PAGE</Link>
                 </ErrorPageContentRight>
             </ErrorPageContent>
         </ErrorPageContainer>
