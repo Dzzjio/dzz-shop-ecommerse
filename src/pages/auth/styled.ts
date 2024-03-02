@@ -93,6 +93,7 @@ export const AuthContainerUniqueFormBtns = styled.div`
         padding: 10px 20px;
         font-weight: bold;
         transition: all .2s ease-in-out;
+        cursor: pointer;
 
         &:last-child {
             color: black;
