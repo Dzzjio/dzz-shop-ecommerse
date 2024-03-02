@@ -5,10 +5,12 @@ import logo from '../../../assets/images/logo.png'
 import { useState } from 'react';
 import Cart from 'components/ui/cart/cart';
 import MobileMenu from 'components/ui/mobileMenu/mobileMenu';
+import SearchModal from 'components/ui/search/search';
 
 const Header = () => {
   const [open, setOpen] = useState(false)
   const [openMobileMenu, setOpenMobileMenu] = useState(false)
+  const [openSearch, setOpenSearch] = useState(false)
 
   const setBodyFixed = () => {
     document.body.classList.toggle('fixed')
@@ -34,7 +36,7 @@ const Header = () => {
           <span><StyledLink to='/auth/register'>Register</StyledLink></span>
         </p>
         <div>
-          <FontAwesomeIcon icon={faSearch} />
+          <FontAwesomeIcon icon={faSearch} onClick={() => {setOpenSearch(true); setBodyFixed()}} />
           <FontAwesomeIcon icon={faHeart} />
           <FontAwesomeIcon icon={faShoppingCart} onClick={() => {setOpen(true); setBodyFixed()}} />
           <FontAwesomeIcon icon={faNavicon} onClick={() => {setOpenMobileMenu(true); setBodyFixed()}}/>
@@ -44,6 +46,7 @@ const Header = () => {
     
     <Cart open={open} onClose={() => {setOpen(false); setBodyFixed()}}/>
     <MobileMenu open={openMobileMenu} onClose={() => {setOpenMobileMenu(false); setBodyFixed()}}/>
+    <SearchModal open={openSearch} onClose={() => {setOpenSearch(false); setBodyFixed()}} />
     </>
   )
 }
