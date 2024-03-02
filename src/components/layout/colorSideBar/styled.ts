@@ -4,9 +4,13 @@ export const ColorSidebarContainer = styled.div`
   width: 20%;
   margin: 40px 0px;
   display: flex;
-  min-width: 275px;
+  width: 275px;
   flex-direction: column;
   gap: 20px;
+
+  @media (max-width: 1030px) {
+    max-width: 220px;
+  }
 
   div.filters {
     display: flex;
@@ -49,6 +53,7 @@ export const ColorSidebarContainer = styled.div`
   .reset-button {
     box-sizing: border-box;
     width: 30%;
+    min-width: 100px;
     color: white;
     background-color: black;
     border: 1px solid black;

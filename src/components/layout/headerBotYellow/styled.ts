@@ -8,6 +8,10 @@ export const StyledHeaderBotY = styled.div`
     background-image: url(${headerImg});
     background-size: 100% 100%;
 
+    @media (max-width: 650px) {
+        display: none;
+    }
+
     & > img {
         position: absolute;
         bottom: 0;

@@ -20,10 +20,20 @@
     justify-content: space-between;
     font-size: 15px;
     color: #635a5a;
+
+    @media(max-width: 1200px) {
+      flex-direction: column;
+    }
   }
 
   .form_control_container {
     display: flex;
+  }
+
+  .form_control_container > div > span {
+    @media (max-width: 1000px) {
+      font-size: 12px;
+    }
   }
 
   .dollar {
