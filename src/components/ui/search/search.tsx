@@ -13,8 +13,11 @@ const SearchModal: FC<IPropsSearch> = ( {open, onClose} ) => {
             <Layout onClick={() => onClose()}></Layout>
             <SearchModalContent className={open ? 'open' : ''}>
                 <SearchModalContentContainer>
-                    <div>დღეს სურვილების ასრულების დღეა მამი</div>
-                    <div></div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>bot</div>
                 </SearchModalContentContainer>
             </SearchModalContent>
         </SearchModalContainer>

@@ -268,5 +268,9 @@ export const StyledAboutContainerBotSectionRight = styled.div`
         width : 190px;
         height: 100px;
         object-fit: cover;
+
+        &:hover {
+            transform: scale(1.1)
+        }
     }
 `
