@@ -118,4 +118,8 @@ export const ForgotPassword = styled.div`
     width: 100%;
     margin-top: -35px;
     margin-bottom: 20px;
+
+    & > * {
+        cursor: pointer;
+    }
 `
