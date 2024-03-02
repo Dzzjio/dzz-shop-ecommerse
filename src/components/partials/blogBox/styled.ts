@@ -8,6 +8,19 @@ export const StyledBlogBox = styled.div`
     overflow: hidden;
     position: relative;
 
+    @media (max-width: 1300px) {
+        width: 500px;
+        height: 490px;
+    }
+    @media (max-width: 1050px) {
+        width: 400px;
+        height: 390px;
+    }
+    @media (max-width: 1050px) {
+        width: 400px;
+        height: 390px;
+    }
+
     & > img {
         position: absolute;
         top: 0;
