@@ -270,7 +270,8 @@ export const StyledAboutContainerBotSectionRight = styled.div`
         object-fit: cover;
 
         &:hover {
-            transform: scale(1.1)
+            transform: scale(1.1);
+            transition: all .1s ease-in-out;
         }
     }
 `
