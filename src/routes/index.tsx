@@ -10,6 +10,7 @@ import ErrorPage from 'pages/error'
 import AuthPage from 'pages/auth'
 import LogIn from 'pages/auth/logIn'
 import Register from 'pages/auth/register'
+import WishListPage from 'pages/wishlist'
 
 
 interface IProps {
@@ -29,6 +30,7 @@ const Router: FC<IProps> = ({ lang }) => {
             <Route path="/auth/login" element={<LogIn />} />
             <Route path="/auth/register" element={<Register />} />
         </Route>
+        <Route path="/wishlist" element={<WishListPage />}></Route>
         <Route path="*" element={<ErrorPage />} />
     </Routes>
   )
