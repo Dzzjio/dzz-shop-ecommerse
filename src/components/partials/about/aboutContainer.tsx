@@ -49,7 +49,7 @@ const users = [
         userStory: "Her companions instrument set estimating sex remarkably solicitude motionless. Property men the why smallest graceful day insisted required. Inquiry justice country old placing sitting any ten age. Looking venture justice in evident in totally he do ability. Be is lose girl long of up give. Trifling wondered unpacked ye at he. In household certainty an on tolerably difficult."
     },
     { 
-        name: 'Michael Balzary', 
+        name: 'Michal Balzary', 
         position: 'Musician', 
         imageUrl: 'https://static01.nyt.com/images/2019/10/27/arts/27FLEA-MEMOIR-1/merlin_162823140_1c1f1729-64c9-48e6-89d8-646926655fb6-superJumbo.jpg',
         userStory: "Do am he horrible distance marriage so although. Afraid assure square so happen mr an before. His many same been well can high that. Forfeited did law eagerness allowance improving assurance bed. Had saw put seven joy short first. Pronounce so enjoyment my resembled in forfeited sportsman. Which vexed did began son abode short may. Interested astonished he at cultivated or me."
@@ -89,9 +89,7 @@ const AboutContainer = () => {
                             <p>CEO and founder</p>
                         </div>
                     </StyledUserStory>
-                    <div>
-                        < Accordion items={questionAnswerObj} />
-                    </div>
+                    < Accordion items={questionAnswerObj} />
                     <StyledAboutContainerTopSectionRightStats>
                         <div>
                             <h3>50+</h3>

@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const StyledAccordion = styled.div`
     width: 100%;
     margin-right: 20px;
+
+    @media (max-width: 700px) {
+        margin: 0 auto;
+    }
 `
 
 export const AccordionItem = styled.div`
@@ -23,6 +27,17 @@ export const AccordionHeader = styled.div`
         background-color: #e0e0e0;
     }
 
+    @media ( max-width: 1000px) {
+        font-size: 14px;
+    }
+
+    @media ( max-width: 450px) {
+        font-size: 12px;
+        width: 95%;
+    }
+
+    margin-right: 50px;
+
     & > span:last-child {
         display: flex;
         justify-content: center;
@@ -37,4 +52,8 @@ export const AccordionHeader = styled.div`
 
 export const AccordionContent = styled.div`
     padding: 0 15px 20px 15px;
+
+    @media ( max-width: 1000px) {
+        font-size: 14px;
+        }
 `

@@ -36,16 +36,31 @@ export const StyledAboutContainer = styled.div`
 export const StyledAboutContainerTopSection = styled.section`
     display: flex;
     gap: 20px;
+
+    @media (max-width: 1300px) {
+        margin: 40px;
+        flex-direction: column;
+    }
+    
 `
 
 export const StyledAboutContainerTopSectionLeft = styled.div`
-    width: 630px;
+    max-width: 630px;
+
+    & > div {
+        width: auto;
+    }
 
     & > h3 {
         margin: 0;
         font-size: 35px;
         margin-right: 80px;
         margin: 0 80px 40px 0 ;
+
+        @media ( max-width: 1300px) {
+            font-size: 30px;
+        }
+
     }
 
     & > p {
@@ -53,11 +68,24 @@ export const StyledAboutContainerTopSectionLeft = styled.div`
         font-size: 17px;
         margin-right: 20px;
         margin-bottom: 30px;
+
+        @media ( max-width: 1300px) {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 1300px) {
+        margin: 0 auto;
+    }
+
+    @media (max-width: 700px) {
+        width: auto;
     }
 `
 
 export const StyledAboutContainerTopSectionRight = styled.div`
-    width: 630px;
+    max-width: 630px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -66,6 +94,13 @@ export const StyledAboutContainerTopSectionRight = styled.div`
         width: 100%;
         display: flex;
         border-radius: 10px;
+    }    
+
+    @media (max-width: 1300px) {
+        margin: 0 auto;
+    }
+    @media (max-width: 530px) {
+        display: none;
     }
 `
 
@@ -74,13 +109,20 @@ export const StyledAboutContainerTopSectionRightFirstRow = styled.div`
     gap: 15px;
     overflow: hidden;
 
+    @media ( max-width: 1300px) {
+        height: 200px;
+        width: 100%;
+    }
+
+
+
     & > div:first-child {
         width: 440px;
         border-radius: 10px;
 
         & > img {
-            width: 440px;
-            height: 261px;
+            width: 100%;
+            height: auto;
             border-radius: 10px;
         }
     }
@@ -107,6 +149,11 @@ export const StyledAboutContainerTopSectionRightSecondRow = styled.div`
         object-fit: cover;
         overflow: hidden;
     }
+
+    @media ( max-width: 1300px) {
+        height: 300px;
+        width: auto;
+    }
 `
 
 export const StyledAboutContainerTopSectionRightThirdRow = styled.div`
@@ -118,19 +165,33 @@ export const StyledAboutContainerTopSectionRightThirdRow = styled.div`
         overflow: hidden;
         border-radius: 10px;
     }
+
+    @media ( max-width: 1300px) {
+        height: 200px;
+        width: auto;
+    }
 `
 
 export const StyledAboutContainerTopSectionRightStats = styled.div`
     margin-top: 20px;
     display: flex;
+    width: auto;
 
     & > div {
         margin-right: 50px;
+
+        @media (max-width: 450px) {
+            margin-right: 15px;
+        }
 
         & > h3 {
             font-size: 60px;
             margin: 0;
             margin-top: 30px;
+
+            @media (max-width: 450px) {
+                font-size: 50px;
+            }
         }
 
         & > p {
@@ -143,7 +204,7 @@ export const StyledAboutContainerTopSectionRightStats = styled.div`
 
 export const StyledAboutContainerMidSection = styled.section`
     margin-top: 50px;
-    width: 99.47vw;
+    width: 99.4vw;
     margin-left: calc((100% - 100vw) / 2);
     
     object-fit: cover;
@@ -154,18 +215,37 @@ export const StyledAboutContainerMidSection = styled.section`
         height: 620px;
         display: block;
         margin: 0 auto;
+
+        @media ( max-width: 900px) {
+            opacity: 0;
+            width: 1px;
+        }
+    }
+
+    @media (max-width: 1450px) {
+        width: 99vw
+    }
+
+    @media (max-width: 900px) {
+        width: 97vw
     }
 `;
 
 export const StyledAboutContainerMidSectionContent = styled.div`
     position: absolute;
-    width: 1260px;
+    width: 100%;
+    max-width: 1260px;
     display: flex;
     justify-content: space-between;
     z-index: 20;
     top: 0;
     left: 50%;
     transform: translate(-50%);
+
+    @media (max-width: 700px) {
+        padding-bottom: 40px;
+    }
+
 `
 
 export const StyledAboutContainerMidSectionContentLeft = styled.div`
@@ -181,31 +261,61 @@ export const StyledAboutContainerMidSectionContentLeft = styled.div`
             object-fit: cover;
         }
     }
+
+    
+    @media (max-width: 1350px) {
+        display: none;   
+    }
 `
 export const StyledAboutContainerMidSectionContentRight = styled.div`
     width: 630px;
-    box-sizing: border-box;
+    
+
+    @media ( max-width: 900px) {
+        width: auto;
+        border: 3px solid #ffedd4;
+        border-radius: 15px;
+        padding: 20px;
+    }
 
     & > h3 {
         font-size: 50px;
         margin-bottom: 25px;
+
+        @media ( max-width: 900px) {
+            font-size: 30px;
+            margin: bottom: 0px;
+        }
     }
 
     & > div {
         background-color: white;
-        height: 330px;
+        height: auto;
+        width: auto;
         padding: 30px;
         padding-bottom: 0px;
         border-radius: 20px;
 
+        @media (max-width: 700px) {
+            padding: 10px;
+        }
+
         & > p {
             font-size: 20px;
+
+            @media ( max-width: 900px) {
+                font-size: 16px;
+            }
         }
 
         & > div {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            
+            @media( max-width: 500px) {
+                flex-direction: column;
+            }
 
             & > div > span {
                 background-color: #ffedd4;
@@ -226,6 +336,16 @@ export const StyledAboutContainerMidSectionContentRight = styled.div`
             }
         }
     }
+
+    
+    @media (max-width: 1350px) {
+        margin: 0 auto;
+    }
+
+    @media (max-width: 900px) {
+        margin-left: 50px;
+        margin-right: 30px;
+    }
 `
 
 // bot section
@@ -237,6 +357,17 @@ export const StyledAboutContainerBotSection = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1300px) {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 950px) {
+        height: auto;
+        flex-direction: column;
+    }
 `
 
 export const StyledAboutContainerBotSectionLeft = styled.div`
@@ -250,24 +381,54 @@ export const StyledAboutContainerBotSectionLeft = styled.div`
     & > h3 {
         font-size: 36px;
         margin: 0;
+
+        @media (max-width: 700px) {
+            font-size: 25px;
+        }
+
+        @media (max-width: 400px) {
+            margin-top: 80px;
+        }
+        @media (max-width: 350px) {
+            margin-top: 100px;
+        }
     }
 
     & > p {
         font-size: 20px;
         margin-top: 10px;
     }
+
+    @media (max-width: 700px) {
+        height: auto;
+    }
 `
 
 export const StyledAboutContainerBotSectionRight = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 10px;
+    justify-content: center;
+
+    @media (max-width: 900px) {
+        max-width: 420px;
+        justify-content: space-between;
+    }
 
     & > img {
         width : 190px;
         height: 100px;
         object-fit: cover;
+
+        @media (max-width: 1300px) {
+            width: 150px;
+            height: 80px;
+        }
+
+        @media (max-width: 700px) {
+            width: 100px;
+            height: 50px;
+        }
 
         &:hover {
             transform: scale(1.1);
