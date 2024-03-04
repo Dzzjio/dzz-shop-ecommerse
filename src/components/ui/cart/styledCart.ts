@@ -27,6 +27,10 @@ export const CartContentContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 700px) {
+        width: 250px;
+    }
 `
 
 export const WishlistAndCart = styled.div`
@@ -79,6 +83,10 @@ export const CartContent = styled.div`
 
     &.open {
         right: 0;
+    }
+
+    @media (max-width: 700px) {
+        width: 350px;
     }
 `
 
@@ -202,9 +210,5 @@ export const CartProductContainer = styled.div`
                 line-height: 2;
             }
         }
-
-
     }
-
-    
 `
