@@ -343,7 +343,7 @@ export const StyledAboutContainerMidSectionContentRight = styled.div`
     }
 
     @media (max-width: 900px) {
-        margin-left: 50px;
+        margin-left: 40px;
         margin-right: 30px;
     }
 `
