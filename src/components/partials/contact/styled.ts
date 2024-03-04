@@ -131,8 +131,5 @@ export const RightStyledContactContainer = styled.div`
         left: 400px;
     }
 
-    & > .map-img {
-        width: auto;
-        height: auto;
-    }
+
 `
