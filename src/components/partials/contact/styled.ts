@@ -3,12 +3,16 @@ import styled from "styled-components";
 export const StyledContactContainer = styled.div`
     position: relative;
     display: flex;
-    width: 1260px;
+    max-width: 1260px;
     margin: 20px auto;
 `
 
 export const LeftStyledContactContainer = styled.div`
     width: 400px;
+
+    @media (max-width: 1300px) {
+        margin: 20px 50px;
+    }
 
     & > p {
         margin-bottom: 30px;
@@ -74,10 +78,16 @@ export const LeftStyledContactContainer = styled.div`
 `
 
 export const RightStyledContactContainer = styled.div`
-    width: 900px;
+    max-width: 900px;
     position: absolute;
     right: -100px;
+    
+    @media (max-width: 1500px) {
+        right: 0;
+    }
 
+    overflow: hidden;
+    z-index: -1;
     & > img {
         width: 100%;
         height: auto;
@@ -91,11 +101,19 @@ export const RightStyledContactContainer = styled.div`
         color: transparent;
         -webkit-text-stroke: 1px #ccc;
         text-stroke: 1px #ccc;
+
+        @media (max-width: 1250px) {
+            display: none;
+        }
     }
 
     & > .location-img {
         width: 20px;
         position: absolute;
+        
+        @media (max-width: 850px) {
+            display: none;
+        }
     }
 
     & > .location-img-1 {
@@ -111,5 +129,10 @@ export const RightStyledContactContainer = styled.div`
     & > .location-img-3 {
         top: 150px;
         left: 400px;
+    }
+
+    & > .map-img {
+        width: auto;
+        height: auto;
     }
 `
