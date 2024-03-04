@@ -106,7 +106,7 @@ const ContactContainer = () => {
             </LeftStyledContactContainer>
 
             <RightStyledContactContainer>
-                <img src={mapImg} alt="world-map-image" />
+                <img className='map-img' src={mapImg} alt="world-map-image" />
                 <img className='location-img location-img-1' src={redLocation} alt="red-location" />
                 <img className='location-img location-img-2' src={blackLocation} alt="black-location" />
                 <img className='location-img location-img-3' src={blackLocation} alt="black-location" />
