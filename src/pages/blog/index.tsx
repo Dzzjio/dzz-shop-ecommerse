@@ -1,11 +1,18 @@
-import BlogContainer from "components/partials/blog/blog";
-import { StyledBlogPage } from "./styled";
+import React, { useState } from 'react';
+import BlogContent from 'components/partials/blog/blog';
+import { StyledBlogPage } from './styled';
 
-const BlogPage = () => {
+const BlogPage: React.FC = () => {
+    const [visibleBlogs, setVisibleBlogs] = useState<number>(4);
+
+    const handleLoadMore = (): void => {
+        setVisibleBlogs(prevVisibleBlogs => prevVisibleBlogs + 4);
+    };
+
     return (
         <StyledBlogPage>
-            <BlogContainer />
-            <button> Load More</button>
+            <BlogContent visibleBlogs={visibleBlogs} />
+            <button onClick={handleLoadMore}> Load More</button>
         </StyledBlogPage>
     )
 }
