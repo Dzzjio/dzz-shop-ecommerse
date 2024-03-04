@@ -130,6 +130,4 @@ export const RightStyledContactContainer = styled.div`
         top: 150px;
         left: 400px;
     }
-
-
 `
