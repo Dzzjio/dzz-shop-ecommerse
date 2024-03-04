@@ -20,9 +20,9 @@ export const MobileMenuContainer = styled.div`
 
 export const MobileMenuContent = styled.div`
     position: absolute;
-    right: -500px;
+    right: -430px;
     top: 0;
-    width: 500px;
+    width: 430px;
     height: 100vh;
     background-color: #fff;
     z-index: 112;
@@ -32,6 +32,11 @@ export const MobileMenuContent = styled.div`
 
     &.open {
         right: 0;
+    }
+
+    @media (max-width: 700px) {
+        right: -250px;
+        width: 250px;
     }
 `
 export const MobileMenuContentContainer = styled.div`
