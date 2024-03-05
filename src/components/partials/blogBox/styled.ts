@@ -20,6 +20,14 @@ export const StyledBlogBox = styled.div`
         width: 400px;
         height: 390px;
     }
+    @media (max-width: 450px) {
+        width: 300px;
+        height: 290px;
+    }
+    @media (max-width: 350px) {
+        width: 260px;
+        height: 290px;
+    }
 
     & > img {
         position: absolute;
@@ -46,6 +54,22 @@ export const StyledBlogBox = styled.div`
         & > p {
             margin: 40px 0;
             font-size: 24px;
+
+            @media (max-width: 1300px) {
+                font-size: 20px;
+            }
+            @media (max-width: 1050px) {
+                margin: 20px 0;
+                font-size: 18px;
+            }
+            @media (max-width: 450px) {
+                margin: 10px 0;
+                font-size: 16px;
+            }
+            @media (max-width: 350px) {
+                margin: 10px 0;
+                font-size: 15px;
+            }
         }
 
         & > div {
@@ -59,6 +83,10 @@ export const StyledBlogBox = styled.div`
                 color: #000;
                 padding: 5px;
                 margin: 0;
+
+                @media (max-width: 450px) {
+                    font-size: 10px;
+                }
             }
         }
 
