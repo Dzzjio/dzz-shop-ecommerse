@@ -61,6 +61,10 @@ export const StyledAboutContainerTopSectionLeft = styled.div`
             font-size: 30px;
         }
 
+        @media ( max-width: 600px) {
+            margin-right: 0;
+        }
+
     }
 
     & > p {
@@ -71,6 +75,9 @@ export const StyledAboutContainerTopSectionLeft = styled.div`
 
         @media ( max-width: 1300px) {
             font-size: 15px;
+        }
+                @media ( max-width: 600px) {
+            margin-right: 0;
         }
     }
 
@@ -343,7 +350,7 @@ export const StyledAboutContainerMidSectionContentRight = styled.div`
     }
 
     @media (max-width: 900px) {
-        margin-left: 40px;
+        margin-left: 35px;
         margin-right: 30px;
     }
 `

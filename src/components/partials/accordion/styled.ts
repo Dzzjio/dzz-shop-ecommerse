@@ -33,10 +33,14 @@ export const AccordionHeader = styled.div`
 
     @media ( max-width: 450px) {
         font-size: 12px;
-        width: 95%;
+        width: auto;
     }
 
     margin-right: 50px;
+
+    @media ( max-width: 600px) {
+        margin-right: 0;
+    }
 
     & > span:last-child {
         display: flex;
