@@ -26,6 +26,13 @@ export const Star = styled.div`
 `
 
 export const HeaderContainer = styled.header`
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 10;
+    transition: all .3s ease-in-out;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
