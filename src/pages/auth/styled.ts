@@ -86,8 +86,9 @@ export const AuthContainerUniqueForm = styled.div`
     }
 
     @media (max-width: 650px) {
-        max-width: 500px;
+        max-width: 400px;
         width: 100%;
+        padding: 40px 30px;
     }
 `
 
