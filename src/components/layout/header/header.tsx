@@ -8,9 +8,9 @@ import MobileMenu from 'components/ui/mobileMenu/mobileMenu';
 import SearchModal from 'components/ui/search/search';
 
 const Header = () => {
-  const [open, setOpen] = useState(false)
-  const [openMobileMenu, setOpenMobileMenu] = useState(false)
-  const [openSearch, setOpenSearch] = useState(false)
+  const [open, setOpen] = useState<boolean>(false)
+  const [openMobileMenu, setOpenMobileMenu] = useState<boolean>(false)
+  const [openSearch, setOpenSearch] = useState<boolean>(false)
 
   const setBodyFixed = () => {
     document.body.classList.toggle('fixed')
