@@ -9,18 +9,25 @@ export const AuthContentContainer = styled.div`
     justify-content: space-between;
     max-width: 1260px;
     margin: 50px auto;
+
+    @media (max-width: 1250px) {
+        justify-content: center;
+    }
 `
 
 export const AuthContainerShared = styled.div`
     
 
     & > img {
-        position: absolute;
+        position: fixed;
         top: 0;
-        bottom: 0;
         left: 0;
         width: 50vw;
         z-index: -1;
+
+        @media (max-width: 1250px) {
+            display: none;
+        }
     }
 `
 
@@ -77,6 +84,11 @@ export const AuthContainerUniqueForm = styled.div`
             }
         }
     }
+
+    @media (max-width: 650px) {
+        max-width: 500px;
+        width: 100%;
+    }
 `
 
 export const AuthContainerUniqueFormBtns = styled.div`
@@ -84,6 +96,10 @@ export const AuthContainerUniqueFormBtns = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+
+    @media (max-width: 650px) {
+        width: 100%;
+    }
 
     &  button {
         background-color: black;

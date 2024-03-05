@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AuthContainerUniqueForm, AuthContainerUniqueFormBtns } from "./styled"
+import { StyledLink } from "components/layout/header/styled";
 
 const Register = () => {
 
@@ -54,6 +55,7 @@ const Register = () => {
                 <button type="submit">REGISTER</button>
                 <button type="submit">SIGN IN</button>
             </AuthContainerUniqueFormBtns>
+            <p>Alredy have an account? <StyledLink to='/auth/login'>Log In</StyledLink></p>
         </AuthContainerUniqueForm>
     )
 }
