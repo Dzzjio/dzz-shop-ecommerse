@@ -89,7 +89,7 @@ export const HeaderContainer = styled.header`
 
     @media (max-width: 530px) {
         flex-direction: row;
-        padding:0 20px;
+        padding:10px 20px;
     }
 `
 
@@ -132,6 +132,14 @@ export const HeaderRightSide = styled.div`
     margin: 10px 50px;
     gap: 30px;
 
+    .burger-icon {
+        display: none;
+
+        @media( max-width: 530px) {
+            display: block;
+        }
+    }
+
     & > div > *.nav-icon {
         margin-left: 30px;
     }
@@ -143,6 +151,12 @@ export const HeaderRightSide = styled.div`
     & > div {
         display: flex;
         gap: 15px;
+    }
+
+    & > p {
+        @media(max-width: 530px) {
+            display: none;
+        }
     }
 
     & > p > span > * {
@@ -161,4 +175,10 @@ export const HeaderRightSide = styled.div`
         align-items: center;
         justify-content: space-between;
     }
+
+    @media (max-width: 530px) {
+        width: auto;
+    }
+
+  
 `

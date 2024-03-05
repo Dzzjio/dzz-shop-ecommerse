@@ -39,7 +39,7 @@ const Header = () => {
           <FontAwesomeIcon icon={faSearch} onClick={() => {setOpenSearch(true); setBodyFixed()}} />
           <StyledLink to='wishlist'><FontAwesomeIcon color='black' icon={faHeart} /></StyledLink>
           <FontAwesomeIcon icon={faShoppingCart} onClick={() => {setOpen(true); setBodyFixed()}} />
-          <FontAwesomeIcon icon={faNavicon} onClick={() => {setOpenMobileMenu(true); setBodyFixed()}}/>
+          <FontAwesomeIcon className='burger-icon' icon={faNavicon} onClick={() => {setOpenMobileMenu(true); setBodyFixed()}}/>
         </div>
       </HeaderRightSide>
     </HeaderContainer>

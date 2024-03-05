@@ -15,6 +15,9 @@ const MobileMenu: FC<IPropsMenu> = ( {open, onClose} ) => {
             <MobileMenuContent className={open ? 'open' : ''}>
                 <MobileMenuContentContainer>
                     <ul>
+                        <li><StyledLink to='/auth/login'>Log In</StyledLink></li>
+                        <li><StyledLink to='/auth/register'>Register</StyledLink></li>
+                        <br></br>
                         <li><StyledLink to='/'><span>Home</span> <Star></Star></StyledLink></li>
                         <li><StyledLink to='/shop'><span>Shop</span> <Star></Star></StyledLink></li>
                         <li><StyledLink to='/blog'><span>Blog</span> <Star></Star></StyledLink></li>
