@@ -23,7 +23,7 @@ export const SearchModalContent = styled.div`
     top: -350px;
     left: 0;
     height: 350px;
-    width: 100vw; /* Changed from 100vh to 100vw */
+    width: 100vw;
     background-color: #fff;
     z-index: 112;
 
@@ -36,10 +36,75 @@ export const SearchModalContent = styled.div`
 `
 
 export const SearchModalContentContainer = styled.div`
-    padding: 35px 35px;
+    box-sizing: border-box;
+    padding: 35px 0;
     height: 350px;
-    width: 100%; /* Changed from 100vw */
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+`
+
+export const SearchModalTop = styled.div`
+
+    & > div:first-child {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+        padding-bottom: 10px;
+
+        & > div:first-child {
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        & > div:last-child {
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    & > div:last-child {
+        display: flex;
+        gap: 10px;
+
+        & > p {
+            margin-top: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+`
+
+export const SearchModalBot = styled.div`
+    div {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+`
+
+export const VerticalLine = styled.div`
+    height: 100%;
+    width: 2px;
+    background-color: #ccc;
+`
+
+export const SearchProduct = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    img {
+        width: 120px;
+        height: 120px;
+        border-radius: 15px;
+    }
+
+    p {
+        margin: 0;
+    }
 `
