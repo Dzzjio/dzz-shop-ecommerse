@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledContactContainer = styled.div`
     position: relative;
     display: flex;
-    max-width: 1260px;
+    max-width: 90vw;
     margin: 20px auto;
 `
 

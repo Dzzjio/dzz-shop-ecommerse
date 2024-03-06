@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledBlogPage = styled.div`
-    max-width: 1260px;
+    max-width: 90vw;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
