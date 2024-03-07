@@ -14,11 +14,11 @@ const MobileMenu: FC<IPropsMenu> = ( {open, onClose} ) => {
             <Layout onClick={() => onClose()}></Layout>
             <MobileMenuContent className={open ? 'open' : ''}>
                 <MobileMenuContentContainer>
-                    <ul>
+                    <ul onClick={() => onClose()}>
                         <li><StyledLink to='/auth/login'>Log In</StyledLink></li>
                         <li><StyledLink to='/auth/register'>Register</StyledLink></li>
                         <br></br>
-                        <li><StyledLink to='/'><span>Home</span> <Star></Star></StyledLink></li>
+                        <li><StyledLink to='/' ><span>Home</span> <Star></Star></StyledLink></li>
                         <li><StyledLink to='/shop'><span>Shop</span> <Star></Star></StyledLink></li>
                         <li><StyledLink to='/blog'><span>Blog</span> <Star></Star></StyledLink></li>
                         <li><StyledLink to='/about'><span>About us</span> <Star></Star></StyledLink></li>
