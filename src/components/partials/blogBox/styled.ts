@@ -2,32 +2,12 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
 export const StyledBlogBox = styled.div`
-    width: 620px;
-    height: 610px;
+    width: 40%;
+    min-width: 300px;
+    aspect-ratio: 8 / 9;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-
-    @media (max-width: 1300px) {
-        width: 500px;
-        height: 490px;
-    }
-    @media (max-width: 1050px) {
-        width: 400px;
-        height: 390px;
-    }
-    @media (max-width: 1050px) {
-        width: 400px;
-        height: 390px;
-    }
-    @media (max-width: 450px) {
-        width: 300px;
-        height: 290px;
-    }
-    @media (max-width: 350px) {
-        width: 260px;
-        height: 290px;
-    }
 
     & > img {
         position: absolute;
@@ -40,10 +20,7 @@ export const StyledBlogBox = styled.div`
 
     & > div {
         position: absolute;
-        max-width: 440px;
         width: 60%;
-        max-height: 220px;
-        height: 33%;
         bottom: 0;
         left: 0;
         background-color: black;
@@ -52,24 +29,9 @@ export const StyledBlogBox = styled.div`
         padding: 30px;
 
         & > p {
-            margin: 40px 0;
+            margin: 10px 0;
             font-size: 24px;
 
-            @media (max-width: 1300px) {
-                font-size: 20px;
-            }
-            @media (max-width: 1050px) {
-                margin: 20px 0;
-                font-size: 18px;
-            }
-            @media (max-width: 450px) {
-                margin: 10px 0;
-                font-size: 16px;
-            }
-            @media (max-width: 350px) {
-                margin: 10px 0;
-                font-size: 15px;
-            }
         }
 
         & > div {
@@ -83,10 +45,6 @@ export const StyledBlogBox = styled.div`
                 color: #000;
                 padding: 5px;
                 margin: 0;
-
-                @media (max-width: 450px) {
-                    font-size: 10px;
-                }
             }
         }
 
