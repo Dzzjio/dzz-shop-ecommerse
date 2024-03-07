@@ -1,3 +1,4 @@
+import { Breakpoints } from "constantss";
 import styled from "styled-components";
 
 export const StyledAccordion = styled.div`
@@ -27,19 +28,8 @@ export const AccordionHeader = styled.div`
         background-color: #e0e0e0;
     }
 
-    @media ( max-width: 1000px) {
-        font-size: 14px;
-    }
-
-    @media ( max-width: 450px) {
+    @media ( max-width: ${Breakpoints.tablet}) {
         font-size: 12px;
-        width: auto;
-    }
-
-    margin-right: 50px;
-
-    @media ( max-width: 600px) {
-        margin-right: 0;
     }
 
     & > span:last-child {
@@ -57,7 +47,7 @@ export const AccordionHeader = styled.div`
 export const AccordionContent = styled.div`
     padding: 0 15px 20px 15px;
 
-    @media ( max-width: 1000px) {
+    @media ( max-width: ${Breakpoints.tablet}) {
         font-size: 14px;
-        }
+    }
 `

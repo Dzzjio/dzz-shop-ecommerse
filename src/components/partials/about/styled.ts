@@ -1,3 +1,4 @@
+import { Breakpoints } from "constantss";
 import styled from "styled-components";
 
 export const StyledUserStory = styled.div`
@@ -36,146 +37,95 @@ export const StyledAboutContainer = styled.div`
 export const StyledAboutContainerTopSection = styled.section`
     display: flex;
     gap: 20px;
+    width: 100%;
 
-    @media (max-width: 1300px) {
-        margin: 40px;
+    @media (max-width: ${Breakpoints.tabletland}) {
+        margin: 40px auto;
         flex-direction: column;
     }
     
 `
 
 export const StyledAboutContainerTopSectionLeft = styled.div`
-    max-width: 630px;
+    max-width: 48%;
+    margin: 0 auto;
 
     & > div {
         width: auto;
     }
 
     & > h3 {
-        margin: 0;
         font-size: 35px;
-        margin-right: 80px;
-        margin: 0 80px 40px 0 ;
-
-        @media ( max-width: 1300px) {
-            font-size: 30px;
-        }
-
-        @media ( max-width: 600px) {
-            margin-right: 0;
-        }
-
+        margin: 0 0 40px 0 ;
     }
 
     & > p {
         color: #3b3b3b;
         font-size: 17px;
-        margin-right: 20px;
-        margin-bottom: 30px;
-
-        @media ( max-width: 1300px) {
-            font-size: 15px;
-        }
-                @media ( max-width: 600px) {
-            margin-right: 0;
-        }
     }
 
-    @media (max-width: 1300px) {
-        margin: 0 auto;
-    }
-
-    @media (max-width: 700px) {
-        width: auto;
+    @media (max-width: ${Breakpoints.tabletland}) {
+        max-width: 70%;
     }
 `
 
 export const StyledAboutContainerTopSectionRight = styled.div`
-    max-width: 630px;
-    width: 100%;
+    max-width: 48%;
     display: flex;
+    height: auto;
     flex-direction: column;
     gap: 15px;
+    margin: 0 auto;
 
     & > div {
         width: 100%;
         display: flex;
         border-radius: 10px;
-    }    
-
-    @media (max-width: 1300px) {
-        margin: 0 auto;
     }
-    @media (max-width: 530px) {
+
+    @media (max-width: ${Breakpoints.tabletland}) {
+        max-width: 70%;
+    }
+    
+    @media (max-width: ${Breakpoints.mobile}) {
         display: none;
     }
 `
 
 export const StyledAboutContainerTopSectionRightFirstRow = styled.div`
-    height: 261px;
+    width: 100%;
+    height: 20%;
     gap: 15px;
-    overflow: hidden;
-
-    @media ( max-width: 1300px) {
-        height: 200px;
-        width: 100%;
-    }
-
-
-
-    & > div:first-child {
-        width: 440px;
-        border-radius: 10px;
-
-        & > img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-    }
-
-    & > div:last-child {
-        width: 190px;
-        display: flex;
-        border-radius: 10px;
-        background-color: gray;
-    }
 
     & > div > img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 10px;
     }
 `
 
 export const StyledAboutContainerTopSectionRightSecondRow = styled.div`
-    height: 544px;
+    height: 30%;
+    width: auto;
     
     & > img {
         border-radius: 10px;
+        width: 100%;
         object-fit: cover;
         overflow: hidden;
-    }
-
-    @media ( max-width: 1300px) {
-        height: 300px;
-        width: auto;
     }
 `
 
 export const StyledAboutContainerTopSectionRightThirdRow = styled.div`
-    height: 264px;
+    height: 20%;
     border-radius: 10px;
 
     & > img {
+        width: 100%;
         object-fit: cover;
         overflow: hidden;
         border-radius: 10px;
-    }
-
-    @media ( max-width: 1300px) {
-        height: 200px;
-        width: auto;
     }
 `
 
@@ -187,7 +137,7 @@ export const StyledAboutContainerTopSectionRightStats = styled.div`
     & > div {
         margin-right: 50px;
 
-        @media (max-width: 450px) {
+        @media (max-width: ${Breakpoints.mobile}) {
             margin-right: 15px;
         }
 
@@ -196,7 +146,7 @@ export const StyledAboutContainerTopSectionRightStats = styled.div`
             margin: 0;
             margin-top: 30px;
 
-            @media (max-width: 450px) {
+            @media (max-width: ${Breakpoints.mobile}) {
                 font-size: 50px;
             }
         }
@@ -223,7 +173,7 @@ export const StyledAboutContainerMidSection = styled.section`
         display: block;
         margin: 0 auto;
 
-        @media ( max-width: 900px) {
+        @media ( max-width: ${Breakpoints.tablet}) {
             opacity: 0;
             width: 1px;
         }
@@ -233,7 +183,7 @@ export const StyledAboutContainerMidSection = styled.section`
         width: 99vw
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: ${Breakpoints.tablet}) {
         width: 97vw
     }
 `;
@@ -241,7 +191,6 @@ export const StyledAboutContainerMidSection = styled.section`
 export const StyledAboutContainerMidSectionContent = styled.div`
     position: absolute;
     width: 100%;
-    max-width: 1260px;
     display: flex;
     justify-content: space-between;
     z-index: 20;
@@ -249,7 +198,7 @@ export const StyledAboutContainerMidSectionContent = styled.div`
     left: 50%;
     transform: translate(-50%);
 
-    @media (max-width: 700px) {
+    @media (max-width: ${Breakpoints.tablet}) {
         padding-bottom: 40px;
     }
 
@@ -278,7 +227,7 @@ export const StyledAboutContainerMidSectionContentRight = styled.div`
     width: 630px;
     
 
-    @media ( max-width: 900px) {
+    @media ( max-width: ${Breakpoints.tablet}) {
         width: auto;
         border: 3px solid #ffedd4;
         border-radius: 15px;
@@ -289,7 +238,7 @@ export const StyledAboutContainerMidSectionContentRight = styled.div`
         font-size: 50px;
         margin-bottom: 25px;
 
-        @media ( max-width: 900px) {
+        @media ( max-width: ${Breakpoints.tablet}) {
             font-size: 30px;
             margin: bottom: 0px;
         }
@@ -303,14 +252,14 @@ export const StyledAboutContainerMidSectionContentRight = styled.div`
         padding-bottom: 0px;
         border-radius: 20px;
 
-        @media (max-width: 700px) {
+        @media (max-width: ${Breakpoints.tablet}) {
             padding: 10px;
         }
 
         & > p {
             font-size: 20px;
 
-            @media ( max-width: 900px) {
+            @media ( max-width: ${Breakpoints.tablet}) {
                 font-size: 16px;
             }
         }
@@ -320,7 +269,7 @@ export const StyledAboutContainerMidSectionContentRight = styled.div`
             justify-content: space-between;
             align-items: center;
             
-            @media( max-width: 500px) {
+            @media( max-width: ${Breakpoints.mobile}) {
                 flex-direction: column;
             }
 
@@ -344,12 +293,11 @@ export const StyledAboutContainerMidSectionContentRight = styled.div`
         }
     }
 
-    
     @media (max-width: 1350px) {
         margin: 0 auto;
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: ${Breakpoints.tablet}) {
         margin-left: 35px;
         margin-right: 30px;
     }
@@ -359,55 +307,34 @@ export const StyledAboutContainerMidSectionContentRight = styled.div`
 
 export const StyledAboutContainerBotSection = styled.section`
     width: 100%;
-    height: 230px;
-    margin-top: 50px;
+    height: auto;
     display: flex;
+    gap: 10px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
 
-    @media (max-width: 1300px) {
+    @media (max-width: ${Breakpoints.tablet}) {
         width: 90%;
         margin: 0 auto;
-        margin-top: 50px;
-    }
-
-    @media (max-width: 950px) {
-        height: auto;
         flex-direction: column;
     }
 `
 
 export const StyledAboutContainerBotSectionLeft = styled.div`
-    height: 80%;
     display: flex;
-    max-width: 420px;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    height: auto;
 
     & > h3 {
         font-size: 36px;
-        margin: 0;
-
-        @media (max-width: 700px) {
-            font-size: 25px;
-        }
-
-        @media (max-width: 400px) {
-            margin-top: 80px;
-        }
-        @media (max-width: 350px) {
-            margin-top: 100px;
-        }
+        margin: 15px 0 0 0;
     }
 
     & > p {
         font-size: 20px;
         margin-top: 10px;
-    }
-
-    @media (max-width: 700px) {
-        height: auto;
     }
 `
 
@@ -417,25 +344,10 @@ export const StyledAboutContainerBotSectionRight = styled.div`
     gap: 10px;
     justify-content: center;
 
-    @media (max-width: 900px) {
-        max-width: 420px;
-        justify-content: space-between;
-    }
-
     & > img {
-        width : 190px;
+        width: 190px;
         height: 100px;
         object-fit: cover;
-
-        @media (max-width: 1300px) {
-            width: 150px;
-            height: 80px;
-        }
-
-        @media (max-width: 700px) {
-            width: 100px;
-            height: 50px;
-        }
 
         &:hover {
             transform: scale(1.1);
