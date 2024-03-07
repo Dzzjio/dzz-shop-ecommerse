@@ -161,7 +161,7 @@ export const StyledAboutContainerTopSectionRightStats = styled.div`
 
 export const StyledAboutContainerMidSection = styled.section`
     margin-top: 50px;
-    width: 99.4vw;
+    width: 99.3vw;
     margin-left: calc((100% - 100vw) / 2);
     
     object-fit: cover;
@@ -190,7 +190,7 @@ export const StyledAboutContainerMidSection = styled.section`
 
 export const StyledAboutContainerMidSectionContent = styled.div`
     position: absolute;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     z-index: 20;
