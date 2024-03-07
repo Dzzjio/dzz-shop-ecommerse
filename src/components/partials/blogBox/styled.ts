@@ -32,6 +32,10 @@ export const StyledBlogBox = styled.div`
             margin: 10px 0;
             font-size: 24px;
 
+            @media (max-width: 480px) {
+                font-size: 16px;
+            }
+
         }
 
         & > div {
