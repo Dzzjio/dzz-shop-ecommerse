@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Breakpoints } from 'constantss';
 
 export const WishListContainer = styled.div`
     width: 60vw;
@@ -33,19 +34,24 @@ export const WishListContent = styled.div`
         padding: 15px 0;
 
         & > p {
-            @media (max-width: 768px) {
+            @media (max-width: ${Breakpoints.tablet}) {
                 font-size: 13px;
             }
         }
 
         & > p:nth-child(2) {
-            width: 20%;
-            text-align: end;
+            width: 40%;
+            text-align: center;
         }
 
         & > p:nth-child(3) {
             width: 20%;
-            text-align: center;
+            text-align: start;
+
+            @media (max-width: ${Breakpoints.tabletland}) {
+                display: none;
+                width: 20%;
+            }
         }
 
         & > div {
@@ -53,7 +59,7 @@ export const WishListContent = styled.div`
             align-items: center;
             gap: 20px;
 
-            @media (max-width: 768px) {
+            @media (max-width: ${Breakpoints.tablet}) {
                 gap: 10px;
             }
 
@@ -77,14 +83,14 @@ export const WishListContent = styled.div`
                 height: 50px;
                 border-radius: 10px;
 
-                @media (max-width: 768px) {
+                @media (max-width: ${Breakpoints.tablet}) {
                     width: 40px;
                     height: 40px;
                 }
             }
 
             & > h3 {
-                @media (max-width: 768px) {
+                @media (max-width: ${Breakpoints.tablet}) {
                     font-size: 14px;
                 }
             }
@@ -103,7 +109,7 @@ export const WishListContent = styled.div`
             color: black;
         }
 
-        @media (max-width: 1024px) {
+        @media (max-width: ${Breakpoints.tabletland}) {
             display: none;
         }
     }
@@ -111,8 +117,11 @@ export const WishListContent = styled.div`
 
 export const AddCartIcon = styled.span`
     display: none;
+    width: 20%;
 
-    @media (max-width: 1024px) {
+    @media (max-width: ${Breakpoints.tabletland}) {
         display: block;
+
+        text-align: end;
     }
 `

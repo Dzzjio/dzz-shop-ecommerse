@@ -2,7 +2,7 @@ import { AddCartIcon, WishListContainer, WishListContent, WishListTitle } from "
 import img from '../../assets/images/product-2.jpg'
 import { FC } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCartArrowDown, faXmark } from "@fortawesome/free-solid-svg-icons"
+import { faCartArrowDown, faCheck, faXmark } from "@fortawesome/free-solid-svg-icons"
 import HeaderBotYellow from "components/layout/headerBotYellow/headerBotY"
 
 
@@ -46,8 +46,13 @@ const WishListPage: FC = () => {
                             <img src={item.productImgUrl} alt={item.product} />
                             <h3>{item.product}</h3>
                         </div>
-                        <p>Price: ${item.price}</p>
+                        <p>${item.price}</p>
                         <p>{item.inStock ? "In Stock" : "Out of Stock"}</p>
+                        <p>{item.inStock ? 
+                            <AddCartIcon><FontAwesomeIcon icon={faCheck}/></AddCartIcon> 
+                                :
+                            <AddCartIcon><FontAwesomeIcon icon={faXmark}/></AddCartIcon>}
+                        </p>
                         <button>Add To Cart</button>
                         <AddCartIcon><FontAwesomeIcon icon={faCartArrowDown}/></AddCartIcon>
                     </div>
