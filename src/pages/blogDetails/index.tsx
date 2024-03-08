@@ -1,3 +1,4 @@
+import BDForthSection from "./forthSection"
 import SecondSection from "./secondSection"
 import { BlogDetailsPageContainer } from "./styled"
 import BDThirdSection from "./thirdSection"
@@ -9,6 +10,7 @@ const BlogDetailsPage = () => {
             <BDTopSection />
             <SecondSection />
             <BDThirdSection />
+            <BDForthSection />
         </BlogDetailsPageContainer>
     )
 }
