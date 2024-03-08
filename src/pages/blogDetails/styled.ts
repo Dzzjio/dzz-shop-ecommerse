@@ -96,3 +96,15 @@ export const StyledSecondSection = styled.section`
         }
     }
 `
+
+export const StyledThirdSection = styled.section`
+position: relative;
+    top: 0;
+    left:0;
+    width: 100%;
+
+    & > img {
+        width: 100%;
+        object-fit: cover;
+    }
+`

@@ -1,5 +1,6 @@
 import SecondSection from "./secondSection"
 import { BlogDetailsPageContainer } from "./styled"
+import BDThirdSection from "./thirdSection"
 import BDTopSection from "./topSection"
 
 const BlogDetailsPage = () => {
@@ -7,6 +8,7 @@ const BlogDetailsPage = () => {
         <BlogDetailsPageContainer>
             <BDTopSection />
             <SecondSection />
+            <BDThirdSection />
         </BlogDetailsPageContainer>
     )
 }
