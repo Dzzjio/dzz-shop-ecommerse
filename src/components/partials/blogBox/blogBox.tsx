@@ -11,7 +11,7 @@ const BlogBox = () => {
                 <p>
                     Uncovering The beauty benefits of red dead redemption.
                 </p>
-                <StyledReadMore to='/'>Read More &gt;</StyledReadMore>
+                <StyledReadMore to='/blogDetails'>Read More &gt;</StyledReadMore>
             </div>
         </StyledBlogBox>
     )   

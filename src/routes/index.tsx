@@ -11,6 +11,7 @@ import AuthPage from 'pages/auth'
 import LogIn from 'pages/auth/logIn'
 import Register from 'pages/auth/register'
 import WishListPage from 'pages/wishlist'
+import BlogDetailsPage from 'pages/blogDetails'
 
 
 interface IProps {
@@ -24,6 +25,7 @@ const Router: FC<IProps> = ({ lang }) => {
         <Route index element={<Homepage />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/blog' element={<BlogPage />} />
+        <Route path='/blogDetails' element={<BlogDetailsPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path="/auth" element={<AuthPage />}>
