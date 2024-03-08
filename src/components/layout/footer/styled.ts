@@ -1,7 +1,8 @@
+import { Breakpoints } from 'constantss'
 import styled from 'styled-components'
 
 export const FooterConteiner = styled.div`
-    max-width: 1260px;
+    width: 90vw;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -11,8 +12,36 @@ export const FooterConteiner = styled.div`
 export const FooterTop = styled.div`
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 110%;
+    margin: 0 auto;
     padding: 100px 0;
+    align-items: center;
+
+    h3 {
+        @media (max-width: ${Breakpoints.tabletland}) {
+            margin-top: 0;
+        }
+    }
+
+    h4 {
+        margin-top: 0;
+    }
+
+    
+    & > div:first-child {
+        display: flex;
+        gap: 150px;
+        
+        @media (max-width: ${Breakpoints.tabletland}) {
+            margin: 0 auto;
+        }
+    }
+
+    & > div:not(:first-child) {
+        @media (max-width: ${Breakpoints.tabletland}) {
+            display: none;
+        }
+    }
 `
 export const InputContainer = styled.div`
     display: flex;
