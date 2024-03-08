@@ -1,8 +1,11 @@
+import { BlogDetailsPageContainer } from "./styled"
+import BDTopSection from "./topSection"
+
 const BlogDetailsPage = () => {
     return (
-        <div>
-
-        </div>
+        <BlogDetailsPageContainer>
+            <BDTopSection />
+        </BlogDetailsPageContainer>
     )
 }
 

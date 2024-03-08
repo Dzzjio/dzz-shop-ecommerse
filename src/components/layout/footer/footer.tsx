@@ -59,7 +59,7 @@ const Footer = () => {
       }, []);
 
     return (
-        <footer style={{ bottom: 0, width: '100%', borderTop: '2px solid #000', backgroundColor:'#fff' }}>
+        <footer style={{ bottom: 0, width: '100%', borderTop: '2px solid #000', backgroundColor:'#fff', position: 'relative' }}>
             <FooterConteiner style={{ display: isMobile ? 'none' : 'flex' }} >
                 <FooterTop>
                     <div>
