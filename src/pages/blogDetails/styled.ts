@@ -252,6 +252,7 @@ export const StyledForthSection = styled.section`
                 height: 4vh;
                 border-radius: 5px;
                 border: 1px solid #000;
+                padding: 5px;
 
                 &::placeholder {
                     color: gray;
