@@ -8,7 +8,6 @@ export const StyledTopSection = styled.section`
     top: 0;
     left:0;
     width: 100%;
-    height: 40vh;
 
     & > div > img {
         width: 100%;
@@ -42,6 +41,57 @@ export const StyledTopSection = styled.section`
                 border-radius: 5px;
                 padding: 5px;
                 font-size: 13px;
+            }
+        }
+    }
+`
+
+export const StyledSecondSection = styled.section`
+    width: 50%;
+    margin: 50px auto;
+
+    & > div.second-section-1-div {
+        position: relative;
+        margin: 20px 0;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+
+        & > img {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+    }
+
+    & > div.second-section-2-div {
+        width: 120%;
+        margin-left: -10%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        img {
+            border-radius: 10px;
+        }
+
+        & > div:first-child {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            & > img {
+                width: 48%;
+            }
+        }
+
+        & > div:last-child {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            & > img {
+                width: 31%;
             }
         }
     }
