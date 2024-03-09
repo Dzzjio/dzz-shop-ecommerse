@@ -47,6 +47,10 @@ export const MobileMenuContentContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
+    hr {
+        margin-left: -75px;
+    }
+
     & > ul {
         list-style-type: none;
 

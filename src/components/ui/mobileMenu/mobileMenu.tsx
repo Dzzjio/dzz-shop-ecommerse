@@ -18,6 +18,8 @@ const MobileMenu: FC<IPropsMenu> = ( {open, onClose} ) => {
                         <li><StyledLink to='/auth/login'>Log In</StyledLink></li>
                         <li><StyledLink to='/auth/register'>Register</StyledLink></li>
                         <br></br>
+                        <hr />
+                        <br />
                         <li><StyledLink to='/' ><span>Home</span> <Star></Star></StyledLink></li>
                         <li><StyledLink to='/shop'><span>Shop</span> <Star></Star></StyledLink></li>
                         <li><StyledLink to='/blog'><span>Blog</span> <Star></Star></StyledLink></li>
