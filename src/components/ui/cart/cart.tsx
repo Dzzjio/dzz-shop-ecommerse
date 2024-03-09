@@ -3,6 +3,7 @@ import { CartContainer, CartContent, CartContentContainer, CartFooter, CartProdu
 import CartProduct, { ICartProduct } from "./cartProduct"
 import airplane from '../../../assets/images/air-plane.png'
 import shippingRange from '../../../assets/images/shipping-range.png'
+import { Link } from "react-router-dom"
 
 interface IProps {
     open: boolean
@@ -63,7 +64,7 @@ const Cart: FC<IProps> = ( {open, onClose} ) => {
                             </div>  
                         </CartStatus>
                             <div>
-                                <button>Checkout</button>
+                                <button><Link to='/checkout'>Checkout</Link></button>
                                 <button>View Cart</button>
                             </div>
                     </CartFooter>

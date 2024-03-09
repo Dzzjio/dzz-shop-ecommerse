@@ -130,6 +130,13 @@ export const CartFooter = styled.div`
         background-color: #fff;
         cursor: pointer;
 
+        & > * {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
         &:last-child {
             color: #fff;
             background-color: #000;
@@ -138,6 +145,10 @@ export const CartFooter = styled.div`
         &:hover {
             color: #fff;
             background-color: #000;
+
+            & > * {
+                color: white;
+            }
         }
 
         &:last-child:hover {
