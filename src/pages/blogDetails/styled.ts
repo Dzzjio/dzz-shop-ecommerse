@@ -1,3 +1,4 @@
+import { Breakpoints } from "constantss";
 import styled from "styled-components";
 
 export const BlogDetailsPageContainer = styled.div`
@@ -28,12 +29,31 @@ export const StyledTopSection = styled.section`
             font-size: 40px;
             font-weight: 100;
             margin: 0;
+
+            @media (max-width: ${Breakpoints.tablet}) {
+                font-size: 20px;
+            }
+            @media (max-width: ${Breakpoints.mobile}) {
+                font-size: 15px;
+            }
         }
 
         & > div {
             display: flex;
             align-items: center;
             gap: 20px;
+
+            @media (max-width: ${Breakpoints.mobile}) {
+                gap: 5px;
+            }
+
+            & > * {
+                @media (max-width: ${Breakpoints.mobile}) {
+                    font-size: 12px;
+                    margin-top: 5px;
+                    
+                }
+            }
 
             & > p:first-child {
                 background-color: black;
@@ -124,6 +144,10 @@ export const StyledForthSection = styled.section`
             width: 49%;
             gap: 10px;
 
+            @media (max-width: ${Breakpoints.tabletland}) {
+                width: 100%;
+            }
+
             & > span {
                 border: 1px solid black;
                 padding: 10px;
@@ -154,12 +178,26 @@ export const StyledForthSection = styled.section`
             display: flex;
             align-items: center;
             gap: 10px;
+
+            @media (max-width: ${Breakpoints.tabletland}) {
+                flex-direction: column;
+                gap: 0;
+
+                p {
+                    margin: 10px;
+                }
+            }
         }
 
         & > div:last-child {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 5px;
+
+            @media (max-width: ${Breakpoints.tabletland}) {
+                flex-direction: column;
+                justify-content: space-between;
+            }
 
             & > div {
                 width: 30px;
@@ -274,7 +312,7 @@ export const StyledForthSection = styled.section`
         }
 
         button {
-            width: 15%;
+            width: auto;
             background-color: black;
             color: white;
             padding: 8px 0;
