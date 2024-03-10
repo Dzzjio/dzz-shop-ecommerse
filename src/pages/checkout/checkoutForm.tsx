@@ -1,8 +1,10 @@
+import { CheckoutPageContainerLeft } from "./styled"
+
 const CheckoutForm = () => {
     return (
-        <form>
+        <CheckoutPageContainerLeft>
             bas
-        </form>
+        </CheckoutPageContainerLeft>
     )
 }
 
