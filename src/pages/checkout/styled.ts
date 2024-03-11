@@ -1,3 +1,4 @@
+import { Breakpoints } from "constantss";
 import styled from "styled-components";
 
 export const CheckoutPageContainer = styled.section`
@@ -5,19 +6,88 @@ export const CheckoutPageContainer = styled.section`
     margin: 50px auto;
     display: flex;
     justify-content: space-between;
-    
+
+    @media (max-width: ${Breakpoints.tablet}) {
+        flex-direction: column;
+    }   
 `
 
 export const CheckoutPageContainerLeft = styled.form`
     width: 66%;
-    background-color: gray;
+
+    @media (max-width: ${Breakpoints.tablet}) {
+        order: 12;
+        width: 90%;
+        margin: 0 auto;
+    } 
+
+    & > input {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: 1px solid black;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+
+    & > div:first-child {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        & > div {
+            width: 48%;
+
+            input {
+                width: 100%;
+                padding: 10px 20px;
+                border-radius: 8px;
+                border: 1px solid black;
+                margin-bottom: 15px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .left-checkboxes {
+        display: flex;
+        flex-direction: column;
+
+        & > div {
+            display: flex;
+            align-items: center;
+
+            & > p {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    textarea {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 5px;
+        min-height: 100px;
+        border: 1px solid black;
+
+        &::placeholder {
+            padding: 10px;
+        }
+    }
 `
 
 export const CheckoutPageContainerRight = styled.div`
     width: 32%;
+    height: fit-content;
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
+
+    @media (max-width: ${Breakpoints.tablet}) {
+        order: 1;
+        width: 90%;
+        margin: 50px auto;
+    } 
 
     & > div.checkout-ordered-items {
         
