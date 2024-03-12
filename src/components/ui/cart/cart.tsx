@@ -65,7 +65,7 @@ const Cart: FC<IProps> = ( {open, onClose} ) => {
                         </CartStatus>
                             <div>
                                 <button><Link to='/checkout'>Checkout</Link></button>
-                                <button>View Cart</button>
+                                <button><Link to='/cart'>Cart</Link></button>
                             </div>
                     </CartFooter>
                 </CartContentContainer>

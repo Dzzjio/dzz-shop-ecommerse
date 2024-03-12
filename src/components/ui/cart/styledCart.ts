@@ -126,34 +126,41 @@ export const CartFooter = styled.div`
         margin: 5px auto;
         border: 1px solid #000;
         border-radius: 5px;
-        color: #000;
-        background-color: #fff;
         cursor: pointer;
 
-        & > * {
-            color: black;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-        }
-
         &:last-child {
-            color: #fff;
-            background-color: #000;
+           
+            & > * {
+                color: black;
+                text-decoration: none;
+                padding: 20px 140px;
+            }
+
+            &:hover {
+                background-color: #000;
+
+                & > * {
+                    color: white;
+                }
+            }
         }
 
-        &:hover {
-            color: #fff;
+        &:first-child {
             background-color: #000;
 
             & > * {
                 color: white;
+                text-decoration: none;
+                padding: 20px 140px;
             }
-        }
 
-        &:last-child:hover {
-            color: #000;
-            background-color: #fff;
+            &:hover {
+                background-color: #fff;
+
+                & > * {
+                    color: black;
+                }
+            }
         }
     }
 `

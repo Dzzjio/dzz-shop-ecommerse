@@ -13,6 +13,7 @@ import Register from 'pages/auth/register'
 import WishListPage from 'pages/wishlist'
 import BlogDetailsPage from 'pages/blogDetails'
 import CheckoutPage from 'pages/checkout'
+import CartPage from 'pages/cart'
 
 
 interface IProps {
@@ -35,6 +36,7 @@ const Router: FC<IProps> = ({ lang }) => {
         </Route>
         <Route path="/wishlist" element={<WishListPage />}></Route>
         <Route path="/checkout" element={<CheckoutPage />}></Route>
+        <Route path="/cart" element={<CartPage />}></Route>
         <Route path="*" element={<ErrorPage />} />
     </Routes>
   )
