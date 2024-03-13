@@ -72,7 +72,7 @@ export const StyledAboutContainerTopSectionLeft = styled.div`
 export const StyledAboutContainerTopSectionRight = styled.div`
     max-width: 48%;
     display: flex;
-    height: auto;
+    height: max-content;
     flex-direction: column;
     gap: 15px;
     margin: 0 auto;
