@@ -4,14 +4,39 @@ import airplane from '../../assets/images/air-plane.png'
 import boxProduct from '../../assets/images/box-product-icon.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons"
+import Table from "./table"
 
 const CartPage = () => {
+
+    const data = [
+        { id: 1,
+            Product: 'John',
+            Price: 30,
+            Quantity: 10,
+            Subtotal: 300 
+        },
+        { id: 2,
+            Product: 'Jane',
+            Price: 25,
+            Quantity: 10,
+            Subtotal: 300 
+        },
+        { id: 3,
+            Product: 'Doe',
+            Price: 40,
+            Quantity: 10,
+            Subtotal: 300 
+        },
+      ]
+      
+      const columns = ['Product', 'Price', 'Quantity', 'Subtotal']
+
     return (
         <>
         <HeaderBotYellow imgUrl={"https://freerangestock.com/sample/61264/online-shopping--laptop-to-shopping-cart.jpg"} />
         <CartPageContainer>
             <CartPageLeft>
-                ;eft
+                <Table data={data} columns={columns} />
             </CartPageLeft>
 
             <CartPageRight>

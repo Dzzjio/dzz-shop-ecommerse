@@ -14,10 +14,6 @@ export const CartPageContainer = styled.section`
 
 export const CartPageLeft = styled.div`
     width: 66%;
-    background-color: red;
-
-
-
 
     @media (max-width: ${Breakpoints.tablet}) {
         order: 12;
@@ -27,12 +23,11 @@ export const CartPageLeft = styled.div`
 `
 
 export const CartPageRight = styled.div`
-        width: 33%;
-        border: 1px solid black;
-        border-radius: 10px;
-        padding: 20px;
-        height: max-content;
-    }
+    width: 33%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    height: max-content;
 
     @media (max-width: ${Breakpoints.tablet}) {
         order: 1;
@@ -42,6 +37,7 @@ export const CartPageRight = styled.div`
 `
 
 export const CartPageRightHeader = styled.div`
+
     & > div {
         border: 1px solid black;
         border-radius: 10px;
@@ -52,6 +48,9 @@ export const CartPageRightHeader = styled.div`
 
         & > * {
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         & > div > * {
@@ -59,12 +58,12 @@ export const CartPageRightHeader = styled.div`
         }
 
         & > img {
-            object-fit: cover;
+            object-fit: contain;
         }
 `
 
 export const CartPageRightFooter = styled.div`
-    margin-top: 20px;
+    margin-top: 20px;   
 
     & > div:first-child {
         display: flex;
