@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import Cart from 'components/ui/cart/cart';
 import MobileMenu from 'components/ui/mobileMenu/mobileMenu';
 import SearchModal from 'components/ui/search/search';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false)
@@ -34,7 +35,7 @@ const Header = () => {
     {/* style={{ top: visible ? '0' : '-100px'}} */}
     <HeaderContainer >
       <HeaderLeftSide>
-        <img src={logo} alt="logo" />
+        <NavLink to='/'><img src={logo} alt="logo" /></NavLink>
          <ul>
           <li><StyledLink to='/'><span>Home</span> <Star></Star></StyledLink></li>
           <li><StyledLink to='/shop'><span>Shop</span> <Star></Star></StyledLink></li>

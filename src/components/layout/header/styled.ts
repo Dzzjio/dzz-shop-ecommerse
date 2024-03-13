@@ -41,7 +41,7 @@ export const HeaderContainer = styled.header`
         display: flex;
         align-items: center;
 
-        & > img {
+        & > * > img {
             height: 30px;
             margin: 10px 50px;
             cursor: pointer;
