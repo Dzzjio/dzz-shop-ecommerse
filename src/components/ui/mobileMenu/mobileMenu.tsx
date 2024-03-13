@@ -15,8 +15,8 @@ const MobileMenu: FC<IPropsMenu> = ( {open, onClose} ) => {
             <MobileMenuContent className={open ? 'open' : ''}>
                 <MobileMenuContentContainer>
                     <ul onClick={() => onClose()}>
-                        <li><StyledLink to='/auth/login'>Log In</StyledLink></li>
-                        <li><StyledLink to='/auth/register'>Register</StyledLink></li>
+                        <li className="auth-in-menu"><StyledLink to='/auth/login'>Log In</StyledLink></li>
+                        <li className="auth-in-menu"><StyledLink to='/auth/register'>Register</StyledLink></li>
                         <br></br>
                         <hr />
                         <br />

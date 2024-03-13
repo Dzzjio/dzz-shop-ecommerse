@@ -47,6 +47,22 @@ export const MobileMenuContentContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
+
+    li.auth-in-menu {
+        & > a {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+
+            &:hover {
+                color: black;
+                background-color: white;
+            }
+        }
+    }
+
     hr {
         margin-left: -75px;
     }
