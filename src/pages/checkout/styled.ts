@@ -64,9 +64,9 @@ export const CheckoutPageContainerLeft = styled.form`
     }
 
     textarea {
-        width: 100%;
+        max-width: 100%;
         border-radius: 10px;
-        margin-top: 5px;
+        margin-top: 25px;
         min-height: 100px;
         border: 1px solid black;
 
