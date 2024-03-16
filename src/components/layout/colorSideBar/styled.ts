@@ -68,4 +68,12 @@ export const ColorSidebarContainer = styled.div`
       border: 1px solid black;
     }
   }
+
+  .color-span-container > span {
+    box-sizing: content-box;
+  }
+
+  .size-span-container > span {
+    box-sizing: content-box;
+  }
 `
