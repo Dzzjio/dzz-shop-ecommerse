@@ -106,7 +106,7 @@ export const StyledAboutContainerTopSectionRightFirstRow = styled.div`
 `
 
 export const StyledAboutContainerTopSectionRightSecondRow = styled.div`
-    height: 30%;
+    max-height: 30rem;
     width: auto;
     
     & > img {
