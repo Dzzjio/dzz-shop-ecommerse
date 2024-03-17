@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
 import { StyledTable } from './styledTable';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 interface TableProps {
   data: { [key: string]: any }[];
@@ -22,6 +24,7 @@ const Table: FC<TableProps> = ({ data, columns }) => {
             {columns.map((column, colIndex) => (
               <td key={colIndex}>{row[column]}</td>
             ))}
+            <span><FontAwesomeIcon icon={faXmark} /></span>
           </tr>
         ))}
       </tbody>

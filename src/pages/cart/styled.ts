@@ -20,6 +20,47 @@ export const CartPageLeft = styled.div`
         width: 90%;
         margin: 0 auto;
     }
+
+    & > div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        & > p {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0;
+
+            & > input {
+                border: none;
+                height: 100%;
+                width: 70%;
+            
+                &:focus {
+                    border-bottom: transparent;
+                    outline: none;
+                }
+            }
+        }
+
+        & > button {
+            border-radius: 10px;
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+            padding: 0 20px;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
 `
 
 export const CartPageRight = styled.div`

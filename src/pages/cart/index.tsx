@@ -10,21 +10,53 @@ const CartPage = () => {
 
     const data = [
         { id: 1,
-            Product: 'John',
+            Product: 'Woman Bright Blouse Pants',
             Price: 30,
-            Quantity: 10,
+            Quantity: <div>
+                <span>-</span>
+                <span>10</span>
+                <span>+</span>
+            </div>,
             Subtotal: 300 
         },
         { id: 2,
-            Product: 'Jane',
+            Product: 'Shot Slad Curly Woman Striped Pants Purple',
             Price: 25,
-            Quantity: 10,
+            Quantity: <div>
+                <span>-</span>
+                <span>10</span>
+                <span>+</span>
+            </div>,
+            Subtotal: 300
+        },
+        { id: 3,
+            Product: 'Curly Girl Beautiful Dress',
+            Price: 40,
+            Quantity: <div>
+                <span>-</span>
+                <span>10</span>
+                <span>+</span>
+            </div>,
             Subtotal: 300 
         },
         { id: 3,
-            Product: 'Doe',
+            Product: 'Shot Slad Curly Woman Striped Pants Purple',
+            Price: 25,
+            Quantity: <div>
+                <span>-</span>
+                <span>10</span>
+                <span>+</span>
+            </div>,
+            Subtotal: 300
+        },
+        { id: 4,
+            Product: 'Curly Girl Beautiful Dress',
             Price: 40,
-            Quantity: 10,
+            Quantity: <div>
+                <span>-</span>
+                <span>10</span>
+                <span>+</span>
+            </div>,
             Subtotal: 300 
         },
       ]
@@ -37,6 +69,10 @@ const CartPage = () => {
         <CartPageContainer>
             <CartPageLeft>
                 <Table data={data} columns={columns} />
+                <div>
+                    <p><input type="text" placeholder="Coupon Code" /> <b>Apply Coupon</b></p>
+                    <button>UPDATE CART</button>
+                </div>
             </CartPageLeft>
 
             <CartPageRight>
