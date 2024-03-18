@@ -6,7 +6,7 @@ import asusROG from '../../assets/images/asus-rog-strix.jpg'
 const AboutPage = () => {
     return (
         <>
-            <HeaderBotYellow imgUrl={asusROG} />
+            <HeaderBotYellow imgUrl={asusROG} headingText={"ABOUT US"} />
             <StyledAboutPageContainer>
                 <AboutContainer />
             </StyledAboutPageContainer>

@@ -30,7 +30,7 @@ const wishlistItmes = [
 const WishListPage: FC = () => {
     return (
         <>
-        <HeaderBotYellow imgUrl={img} />
+        <HeaderBotYellow imgUrl={img} headingText={"WISHLIST"} />
         <WishListContainer>
             <WishListTitle>
                 <p>Product</p>

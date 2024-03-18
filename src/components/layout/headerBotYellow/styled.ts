@@ -1,14 +1,17 @@
 import styled from "styled-components";
 import headerImg from '../../../assets/images/yellow-header-img.png';
+import { Breakpoints } from "constantss";
 
 export const StyledHeaderBotY = styled.div`
     position: relative;
     height: 200px;
+    display: flex;
+    gap: 20px;
 
     background-image: url(${headerImg});
     background-size: 100% 100%;
 
-    @media (max-width: 650px) {
+    @media (max-width: ${Breakpoints.tablet}) {
         display: none;
     }
 
@@ -19,5 +22,13 @@ export const StyledHeaderBotY = styled.div`
         width: 300px;
         height: 100%;
         object-fit: cover; 
+    }
+
+    & > h3 {
+        position: absolute;
+        top: 30%;
+        margin-left: 80px;
+        height: 100%;
+        font-size: 30px;
     }
 `;

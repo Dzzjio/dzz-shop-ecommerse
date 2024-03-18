@@ -65,7 +65,7 @@ const CartPage = () => {
 
     return (
         <>
-        <HeaderBotYellow imgUrl={"https://freerangestock.com/sample/61264/online-shopping--laptop-to-shopping-cart.jpg"} />
+        <HeaderBotYellow imgUrl={"https://freerangestock.com/sample/61264/online-shopping--laptop-to-shopping-cart.jpg"} headingText={"CART"} />
         <CartPageContainer>
             <CartPageLeft>
                 <Table data={data} columns={columns} />
