@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import Cart from 'components/ui/cart/cart';
 import MobileMenu from 'components/ui/mobileMenu/mobileMenu';
 import SearchModal from 'components/ui/search/search';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [open, setOpen] = useState<boolean>(false)

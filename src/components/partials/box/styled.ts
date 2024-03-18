@@ -7,6 +7,28 @@ export const Box = styled.div`
     height: 350px;
     margin: 20px auto;
     border-radius: 10px;
+    position: relative;
+
+    &:hover button {
+      display: block;
+    }
+  
+
+    button {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      width: 130px;
+      border-radius: 20px;
+      border: 2px solid white;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translate(-50%);
+      cursor: pointer;
+      display: none;
+    }
+    
 
   p {
     margin: 0;
