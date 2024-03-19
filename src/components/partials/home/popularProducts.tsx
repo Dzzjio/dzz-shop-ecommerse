@@ -34,7 +34,6 @@ const PopularProducts = () => {
     <Container>
       <PopularProductsContainer>
         <div className="display-flex">
-          <Title>Most popular products</Title>
         </div>
         <div className="row">
           {products.map((item) => (

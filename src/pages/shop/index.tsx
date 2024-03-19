@@ -2,7 +2,6 @@
 import PopularProducts from "components/partials/home/popularProducts"
 import { Container } from "components/styled/container"
 import { ShopContainer } from "./styled"
-import { Title } from "components/styled/title"
 import ColorSidebar from "components/layout/colorSideBar/colorSideBar"
 import HeaderBotYellow from "components/layout/headerBotYellow/headerBotY"
 import { useState } from "react"
@@ -24,7 +23,6 @@ const Shop = () => {
             <Container>
                 <ShopContainer>
                 {/* <FontAwesomeIcon icon={faFilter} onClick={() => {setOpenFilter(true); setBodyFixed()}} /> */}
-                <Title>Shop</Title>
                 <div className="row">
                     <ColorSidebar />
                     <div className="col-8">
