@@ -11,8 +11,6 @@ export const StyledFirstSectionHome = styled.section`
     margin-left: 10vw;
     display: flex;
 
-
-
     & > div.home-first-section-left {
         position: relative;
         width: 50%;
