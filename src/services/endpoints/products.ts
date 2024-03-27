@@ -1,5 +1,17 @@
-const getProducts = () => {
-    return ''
+import api from "services/API"
+
+const getProducts = (
+    PageNumber: number,
+    PageSize: number,
+    // CategyId: string = '', 
+    // PriceFrom: number | null = null, 
+    // PriceTo: number | null = null,
+) => {
+    return api
+    .get(`product/products?PageNumber=${PageNumber}&PageSize=${PageSize}`)
+    .then((res) => {
+        return res
+    })
 }
 
 const getCategories = () => {
@@ -11,7 +23,9 @@ const getSingleProduct = () => {
 }
 
 const getLatestProduct = () => {
-    return ''
+    return api.get('product/latestproducts').then((res) => {
+        return res
+    })
 }
 
 const getOffers = () => {
