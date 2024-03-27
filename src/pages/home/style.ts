@@ -83,6 +83,7 @@ export const StyledFirstSectionHome = styled.section`
                 padding: 10px 20px;
                 border-radius: 10px;
                 font-weight: bold;
+                cursor: pointer;
 
                 &:hover {
                     color: white;
