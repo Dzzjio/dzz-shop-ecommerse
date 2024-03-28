@@ -3,7 +3,6 @@ import FirstSectionHome from './firstSection';
 import { StyledHomePage } from './style';
 import { useEffect, useState } from 'react';
 import { API } from 'services/endpoints';
-import { log } from 'console';
 
 export interface ICat {
   id: string
