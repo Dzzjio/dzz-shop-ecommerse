@@ -3,6 +3,51 @@ import styled from "styled-components";
 export const StyledHomePage = styled.div`
     position: relative;
     // width: 100%;
+
+    & > div.most-popular-products {
+        width: 80vw;
+        margin: 20px     auto;
+
+        & > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & > h3 {
+                font-size: 25px;
+            }
+
+            & > div.category-select-popular-products {
+                border: 1px solid black;
+                border-radius: 20px;
+                padding: 5px;
+                display: flex;
+                gap: 10px;
+
+                & > span {
+                    cursor: pointer;
+                    padding: 5px;
+                    border-radius: 15px;
+                    border: 1px solid transparent;
+
+                    &:hover {
+                        border: 1px solid black;
+                        padding: 5px;
+                    }
+
+                    &:active {
+                        background-color: black;
+                        color: white;
+                    }
+
+                    &.active {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
 `
 
 //First Section
@@ -10,6 +55,7 @@ export const StyledFirstSectionHome = styled.section`
     position: relative;
     margin-left: 10vw;
     display: flex;
+    margin-top: 40px;
 
     & > div.home-first-section-left {
         position: relative;

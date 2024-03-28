@@ -3,10 +3,30 @@ import api from "services/API"
 const getProducts = (
     PageNumber: number,
     PageSize: number,
-    // CategyId: string = '', 
-    // PriceFrom: number | null = null, 
-    // PriceTo: number | null = null,
+    CategyId: string = '', 
+    PriceFrom: number | null = null, 
+    PriceTo: number | null = null,
 ) => {
+
+    const data = {
+        PageNumber,
+        PageSize,
+    }
+
+    if (CategyId) {
+        //@ts-ignore
+        data[CategyId] = CategyId
+    }
+
+    if (PriceFrom) {
+        //@ts-ignore
+        data[PriceFrom] = PriceFrom
+    }
+
+    if (PriceTo) {
+        //@ts-ignore
+        data[PriceTo] = PriceTo
+    }
     return api
     .get(`product/products?PageNumber=${PageNumber}&PageSize=${PageSize}`)
     .then((res) => {
@@ -15,7 +35,9 @@ const getProducts = (
 }
 
 const getCategories = () => {
-    return ''
+    return api.get('product/categories').then((res) => {
+        return res
+    })
 }
 
 const getSingleProduct = () => {

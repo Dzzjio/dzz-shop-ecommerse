@@ -2,7 +2,6 @@ import { StyledFirstSectionHome } from "./style"
 import redHotLogo from '../../assets/images/red-hot-logo.png'
 import yelloStar from '../../assets/images/home-page-yellow-star.png'
 import collectionsLogo from '../../assets/images/explore-more-collection.png'
-import productHome from '../../assets/images/product-1.jpg'
 
 const FirstSectionHome = () => {
     return (
@@ -39,7 +38,6 @@ const FirstSectionHome = () => {
             </div>
 
             <div className="home-first-section-right">
-                <img src={productHome} alt="productHome" />
             </div>
         </StyledFirstSectionHome>
     )

@@ -26,7 +26,7 @@ const Shop = () => {
                 <div className="row">
                     <ColorSidebar />
                     <div className="col-8">
-                        <PopularProducts />
+                        <PopularProducts products={[]} />
                     </div>
                 </div>
                 </ShopContainer>

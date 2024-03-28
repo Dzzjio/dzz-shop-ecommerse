@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Box = styled.div`
     max-width: 10px;
-    width: 300px;
     max-height: 475px;
     height: 350px;
     margin: 20px auto;
@@ -79,7 +78,7 @@ export const BoxTop = styled.div`
   & > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
   }
 

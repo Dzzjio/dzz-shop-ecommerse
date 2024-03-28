@@ -1,25 +1,73 @@
 import PopularProducts from 'components/partials/home/popularProducts';
 import FirstSectionHome from './firstSection';
 import { StyledHomePage } from './style';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { API } from 'services/endpoints';
+import { log } from 'console';
+
+export interface ICat {
+  id: string
+  name: string
+}
 
 const HomePage = () => {
 
+  const [products, setProducts] = useState([])
+  const [categories, setCategories] = useState<ICat[]>([])
+  const [activeCategories, setactiveCategories] = useState('')
+
+  const handleCaregoryClick = (category: string) => {
+    setactiveCategories(category)
+  }
+
   useEffect(() => {
-    API.products.getLatestProduct().then((res) => {
-      console.log(res);
+    // API.products.getLatestProduct().then((res) => {
+    //   console.log(res);
+    // })
+
+    API.products.getCategories().then((res) => {
+      //add .data
+      setCategories(res.data.slice(0, 4))
+      console.log('cat:',res.data);
+      
     })
 
-    API.products.getProducts(0,0).then((res) => {
-      console.log('products', res);
+    API.products.getProducts(0,6).then((res) => {
+      console.log(res);
+      const filteredData = res.data.map(
+        (item: {images: any[]; name: any; price: any}) => {
+        return {
+          img: item.images[0],
+          title: item.name,
+          price: item.price,
+          category: 0,
+          discount: 0,
+        }
+      })
+      setProducts(filteredData)
     })
   }, [])
 
   return (
     <StyledHomePage>
       <FirstSectionHome />
-      {/* <PopularProducts /> */}
+      <div className='most-popular-products'>
+        <div>
+          <h3>Most Popular Products</h3>
+          <div className='category-select-popular-products'>
+            {
+              categories.map((category) => (
+                <span
+                  key={`category-main-page-${category}`}
+                  className={category.id === activeCategories ? 'active' : ''}
+                  onClick={() => handleCaregoryClick(category.id)}
+                >{category.name}</span>
+              ))
+            }
+          </div>
+        </div>
+        <PopularProducts products={products}/>
+      </div>
     </StyledHomePage>
   );
 };
