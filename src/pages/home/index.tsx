@@ -10,7 +10,8 @@ export interface ICat {
 }
 
 const HomePage = () => {
-
+  
+  const [latestProducts, setLatestProducts] = useState([])
   const [products, setProducts] = useState([])
   const [categories, setCategories] = useState<ICat[]>([])
   const [activeCategories, setactiveCategories] = useState('')
@@ -20,9 +21,6 @@ const HomePage = () => {
   }
 
   useEffect(() => {
-    // API.products.getLatestProduct().then((res) => {
-    //   console.log(res);
-    // })
 
     API.products.getCategories().then((res) => {
       //add .data

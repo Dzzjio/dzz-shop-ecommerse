@@ -2,8 +2,28 @@ import { StyledFirstSectionHome } from "./style"
 import redHotLogo from '../../assets/images/red-hot-logo.png'
 import yelloStar from '../../assets/images/home-page-yellow-star.png'
 import collectionsLogo from '../../assets/images/explore-more-collection.png'
+import { useState } from "react"
+import { API } from "services/endpoints"
+import HomePageSlider from "./slider"
 
 const FirstSectionHome = () => {
+
+    const [latestProducts, setLatestProducts] = useState([])
+
+    API.products.getLatestProduct().then((res) => {
+        const filteredData = res.data.map(
+          (item: {images: any[]; name: any; price: any}) => {
+          return {
+            img: item.images[0],
+            title: item.name,
+            price: item.price,
+            category: 0,
+            discount: 0,
+          }
+        })
+        setLatestProducts(filteredData)
+      })
+
     return (
         <StyledFirstSectionHome>
             <div className="home-first-section-left">
@@ -38,6 +58,7 @@ const FirstSectionHome = () => {
             </div>
 
             <div className="home-first-section-right">
+                <HomePageSlider products={latestProducts}/>
             </div>
         </StyledFirstSectionHome>
     )

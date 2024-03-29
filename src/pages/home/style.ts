@@ -56,10 +56,11 @@ export const StyledFirstSectionHome = styled.section`
     margin-left: 10vw;
     display: flex;
     margin-top: 40px;
+    margin-bottom: 40px;
 
     & > div.home-first-section-left {
         position: relative;
-        width: 50%;
+        width: 49%;
 
         & > img[alt="yelloStar"] {
             position: absolute;
@@ -167,6 +168,6 @@ export const StyledFirstSectionHome = styled.section`
     }
 
     & > div.home-first-section-right {
-        width: 50%;
+        width: 49%;
     }
 `
