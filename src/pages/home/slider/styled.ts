@@ -15,5 +15,10 @@ export const HomeSlider = styled.div`
         display: flex !important;
         flex-direction: column;
         justify-content: space-between;
+        
+        & > h3, p {
+            width: 50%;
+            margin: 20px auto;
+        }
     }
 `
