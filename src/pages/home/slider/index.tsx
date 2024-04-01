@@ -16,8 +16,8 @@ const HomePageSlider:FC<IProps> = ({ products }) => {
                 {products.map(item => 
                     <div className="single-slide" key={item.title}>
                         <img src={item.img} alt={item.title}/>
-                        <h3>{item.title}</h3>
-                        <p>{item.price}$</p>
+                        <h3>{item.title.slice(0, 50)}</h3>
+                        <p>Price: {item.price}$</p>
                     </div>  
                 )}
             </Slider>

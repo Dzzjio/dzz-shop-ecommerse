@@ -20,5 +20,9 @@ export const HomeSlider = styled.div`
             width: 50%;
             margin: 20px auto;
         }
+
+        & > p {
+            font-weight: bold;
+        }
     }
 `
