@@ -3,6 +3,7 @@ import FirstSectionHome from './firstSection';
 import { StyledHomePage } from './style';
 import { useEffect, useState } from 'react';
 import { API } from 'services/endpoints';
+import FeaturedSection from './featuredOfferSection';
 
 export interface ICat {
   id: string
@@ -65,6 +66,7 @@ const HomePage = () => {
         </div>
         <PopularProducts products={products}/>
       </div>
+      <FeaturedSection />
     </StyledHomePage>
   );
 };

@@ -171,3 +171,73 @@ export const StyledFirstSectionHome = styled.section`
         width: 49%;
     }
 `
+
+// Featured Seciton
+
+export const StyledFeaturedSection = styled.section`
+    width: 80vw;
+    margin: 0 auto;
+
+    & > div.featured-section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: centet;
+
+        & > * {
+            margin: 10px 0;
+        }
+
+        & > h3 {
+            font-size: 25px;
+        }
+    }
+
+    & > div.featured-section-content {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+
+        & > div.featured-box {
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            overflow: hidden;
+
+            & > img {
+                width: 50%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            & > div {
+                flex: 1;
+                height: 100%;
+                padding: 20px;
+                position: relative;
+
+                & > p {
+                    background-color: white;
+                    display: inline;
+                    padding: 2px 5px;
+                    font-size: 13px;
+                    font-weight: bold;
+                    border-radius: 5px;
+                }
+
+                & > h4 {
+                    font-size: 30px;
+                }
+
+                & > button {
+                    padding: 10px;
+                    border: 2px solid black;
+                    border-radius: 20px;
+                    position: absolute;
+                    bottom: 20px;
+                    background-color: transparent;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+`
