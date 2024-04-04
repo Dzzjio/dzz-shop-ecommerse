@@ -14,7 +14,7 @@ const FeaturedItemsObj = [
     {
         id: 1,
         name: 'SUMMER 2024',
-        sale: 'Up to 50% OFF',
+        sale: 'Up To 50% OFF',
         backgroundColor: 'DCB9BF',
         imgURL: summer2024
     },

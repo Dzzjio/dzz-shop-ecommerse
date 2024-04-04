@@ -12,7 +12,12 @@ interface IProps {
 const HomePageSlider:FC<IProps> = ({ products }) => {
     return (
         <HomeSlider>
-            <Slider>
+            <Slider
+                dots={true}
+                autoplay={true}
+                infinite={true}
+                speed={500}
+            >
                 {products.map(item => 
                     <div className="single-slide" key={item.title}>
                         <img src={item.img} alt={item.title}/>

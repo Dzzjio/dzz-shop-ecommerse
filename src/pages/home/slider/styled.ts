@@ -8,6 +8,8 @@ export const HomeSlider = styled.div`
         height: 100%;
         object-fit: cover;
         margin: 0 auto;
+        border-radius: 20px;
+        border: 1px solid black;
     }
 
     .single-slide {
